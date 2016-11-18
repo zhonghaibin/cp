@@ -1,0 +1,83 @@
+body {  }
+.menu { height: 82px; background:url(../images/dialog_menu_bg.png) no-repeat center top; background-size:100% 48px; position: relative; margin-bottom: 10px; }
+.menu .navleft, .menu .navright { position: absolute; left: 0px; top: 0px; height: 82px; width: 5px; }
+.menu .navright { background-position: right top; left: auto; right: 0px; }
+.mainmenu { height: 48px; padding-left: 10px; }
+.mainmenu li, .secondmenu li { float: left; }
+.mainmenu li{padding-top:7px;}
+.mainmenu li a { display: block; color: #fff; width: 87px; height: 33px; border-radius: 5px;border:1px solid transparent; text-align: center; line-height: 33px; text-decoration: none; font-size: 14px; font-weight: bold; }
+.mainmenu li a.hover, .mainmenu li a:hover { background:url(../images/btn_mask.png) #350400 no-repeat center bottom; border-color:rgba(185,104,32,.3);}
+.secondmenu { height: 40px; padding: 3px 10px;  background: url(../images/s1.png) no-repeat -551px -335px; }
+.secondmenu li a { display: block; font-size: 14px; text-align: center; color: #b79782; height: 30px;border-radius: 5px;border:1px solid transparent; line-height: 30px; padding: 0px 10px; }
+.secondmenu li a.hover, .secondmenu li a:hover { background:url(../images/btn_mask.png) #350400 no-repeat center bottom; border-color:rgba(185,104,32,.3); }
+span.red { color: #ff0000; }
+span.green { color: green; }
+.savebutton { width:118px; height: 40px; border: none;background: url(../images/s1.png) no-repeat -732px -259px;  font-weight: bold; text-align: center; line-height: 40px; color: #fff; text-decoration: none;  }
+.navbtn { height: 27px; border: 1px solid #3c3030; color: #c8c8c8; background: #222; line-height: 27px; padding: 0 10px; cursor: pointer; }
+input[type="text"], input[type="password"],input.input_text { padding: 5px; height: 15px; line-height: 15px; border: 1px solid #3c3030; color: #c8c8c8; border-radius: 2px; outline: none; background-color: #120a0c; background-color: rgba(18, 11, 12, 0.5);  }
+/*select {background: transparent; height: 27px; line-height: 27px; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-width: 0px 21px 0px 5px; -webkit-border-image: url(../images/select.9.png) 0 21 0 5; -moz-border-image: url(../images/select.9.png) 0 21 0 5px; color: #000;*background-color: #120a0c;*border-width:1px; }*/
+select {height: 27px; line-height: 27px; -webkit-border-radius: 2px; -moz-border-radius: 2px; color: #000;*border-width:1px; }
+/*select option{background-color: #120a0c;color:#fff;}*/
+input[type=checkbox], input[type=radio] { -webkit-appearance: none; appearance: none; width: 16px; height: 16px; margin: 0; cursor: pointer; vertical-align: middle; background: #fff; border: 3px solid #0b0706; border-radius: 15px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; position: relative; background: #0c0807; box-shadow: 0px 0px 1px 1px #392d2d; -webkit-appearance:radio;}
+input[type=checkbox]:active { }
+input[type=checkbox]:hover { }
+input[type=checkbox]:checked { background: #898788; }
+input[type=checkbox]:checked::after { display: block; position: absolute; top: -6px; left: -5px; }
+input[type=checkbox]:focus { outline: none; }
+.nav-input-date { background: url(../images/icon-datepicker.png) no-repeat right center; padding-right: 20px; }
+.formbox { color: #c8c8c8; line-height: 200%; }
+.formbox fieldset { border: none; }
+.formbox fieldset legend { text-indent: 10px; color: #fff; font-size: 16px; font-weight: bold; background: url(../images/s1.png) #450204 no-repeat -548px -413px; height: 40px; line-height: 40px; width: 100%; }
+.table tbody tr th { width: 100px; text-align: right; }
+.table tbody tr td { padding: 5px 0; }
+.table tfoot tr td { padding: 10px 0; }
+.table100 { width: 100%; }
+.table tbody tr th { width: 100px; text-align: right; }
+.table2 tbody tr th { width: 80px; text-align: center; }
+.navbox { padding-bottom: 10px; }
+.navbox .right { float: right; }
+.tblist { width: 100%; background: #1b1110; border-collapse: separate; border-spacing: 1px; font-size: 12px; }
+.tblist thead tr td { padding: 5px; background: #6e2f06; color: #9f9e9c; }
+.tblist tbody tr td { padding: 5px; text-align: center; background: #251717; }
+.tblist tbody tr:hover td{background: #160d0e;}
+.tbhead { background: #000; }
+.tbhead tr td { background: #000; color: #fff; text-align: center; }
+.tbbody { overflow-y: scroll; }
+.tbbody table { margin: -40px -1px 0 -1px; }
+.tbbody table tr td { text-align: center; }
+.pager { position: fixed; bottom: 0px; right: 0px; padding: 5px; text-align: center; font-size: 12px; }
+.pager a { color: #ce6b05; background: #222; padding: 2px 10px; text-decoration: none; }
+.pager a:hover, .pager span.current { padding: 2px 10px; background: #ce6b05; color: #ffffff; }
+
+
+.tabmenu{padding-left:10px;}
+.tabmenu li{float:left;padding-top:8px;}
+.tabmenu li a{display: block;color:#cac8c9; padding: 0 10px; height: 36px; border: none; border-radius: 5px 5px 0 0; font-weight: bold; border-width: 1px 1px 0;border-style:  solid;border-color:transparent; text-align: center; line-height: 36px; text-decoration: none; }
+.tabmenu li a.hover,
+.tabmenu li a:hover{background: url(../images/btn_mask.png) #f29e41 no-repeat center top;color: #000; border-color: rgba(255,255,255,.5);}
+
+.bottom_btns{padding:10px;text-align: right;}
+.bottom_btns .button{display: inline-block;cursor: pointer; width:118px;height: 40px;border-radius: 3px; line-height: 40px;font-size: 18px;text-align: center;color:#fff603;background-image: url(../images/s1.png);background-repeat: no-repeat;}
+.bottom_btns .btn_red{background-position: -732px -183px;}
+.bottom_btns .btn_blue{background-position: -732px -221px;}
+.bottom_btns .btn_brown{background-position: -732px -259px;}
+
+.banklist{}
+.banklist ul{}
+.banklist ul li{float:left;}
+.banklist ul li a{display: block;width:150px;height:45px;margin:-1px 0 0 -1px; border:1px dotted #ccc;background-repeat:no-repeat;background-position: 10px center; background-color: #fff;}
+.banklist ul li a.active {
+    background-color: #ebf3f6;
+    border: 1px solid #82a3d0;
+    outline: 1px solid #82a3d0;
+    position: relative;
+    z-index: 2;
+}
+.banklist ul li a span{display: none; width:100%;height:45px; background: url(../images/bank_selected.png) no-repeat right bottom;}
+.banklist ul li a:active span, .banklist ul li a.active span {
+    display: block;
+}
+.banklist ul li a:hover,
+.banklist ul li a.hover{border:1px solid #82a3d0;background-color: #ebf3f6;z-index: 2; position: relative;outline:1px solid #82a3d0; }
+.banklist ul li a:hover span,
+.banklist ul li a.hover span{display: block;}

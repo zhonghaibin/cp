@@ -1,0 +1,89 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    font-family: 微软雅黑;
+    font-size: 14px;
+    outline: none;
+}
+body {
+    background-image: url('/images/index/loginbg.jpg');
+}
+body, html {
+    height: 100%;
+    width: 100%;
+}
+.loginbox {
+    width: 610px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    margin-left: -305px;
+    margin-top: -220px;
+}
+img.logo {
+    margin-bottom: 20px;
+}
+.loginform {
+    width: 610px;
+    height: 284px;
+    background-image: url('/images/index/loginform.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.loginformleft {
+    width: 380px;
+    float: left;
+    padding-top: 80px;
+}
+.loginformleft div {
+    padding-top: 20px;
+}
+.loginformleft p {
+    padding: 12px;
+}
+.loginformleft p
+{
+	padding:5px;
+	padding-left:60px;
+	text-align:left
+}
+.loginformleft p img {
+    margin-bottom: -8px;
+}
+.loginformleft p input {
+    width: 180px;
+    border-radius: 5px;
+    height: 20px;
+    line-height: 20px;
+    padding: 2px;
+    border: 1px #ccc solid;
+}
+.loginformright {
+    width: 160px;
+    float: left;
+    padding: 30px;
+    text-align: left;
+    padding-top: 80px;
+    font-size: 12px;
+    line-height: 22px;
+    word-break: break-all;
+    text-align: Justify;
+    text-justify: inter-ideograph;
+}
+.loginformright p {
+    padding-top: 20px;
+}
+a, a:visited {
+    text-decoration: none;
+}
+p span
+{
+	display:block;
+	color:red;
+	font-size:12px;
+	padding-top:5px;
+}
+form, body, html { 
+    width:100%;height:100%
+}

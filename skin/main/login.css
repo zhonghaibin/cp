@@ -1,0 +1,78 @@
+﻿#header {
+	height:80px;
+	background:#53ADD0;
+	width:100%;
+	margin-bottom:0;
+}
+#header-inner {
+	position:relative;
+	width:990px;
+	height:80px;
+	margin:0 auto;
+}
+#header .logo {
+	padding-top:30px;
+	margin-left:50px;
+	font-size:22px;
+	font-weight:bold;
+	color:#FFF;
+}
+
+#content {
+	width:990px;
+	margin:0 auto;
+	padding-top:49px;
+}
+#content .pic {
+	width:528px;
+	float:left;
+	display:inline;
+	_position:relative;
+}
+#content .pic img {
+	float:right;
+}
+#content .form {
+	float:left;
+	display:inline;
+	width:312px;
+}
+#content .form-inner{
+	border: 2px solid #CCCCCC;
+    margin: 1px;
+    padding: 25px 26px 30px;
+}
+#content .form-inner dl{margin-top:5px;}
+#content .form-inner dl dt{padding-bottom: 3px;color: #606060;font:13px/1.5 Tahoma,Helvetica,Arial,'宋体',sans-serif;font-weight: bold;}
+#content .form-inner .login-text {
+    border: 1px solid #C8C8C8;
+    height: 18px;
+    line-height: 18px;
+    margin-right: 3px;
+    padding: 3px;
+    vertical-align: middle;
+    width: 242px;
+	color: #9B9B9B;
+}
+#content .form-inner .login-btn{
+	background: url("images/btn.png") no-repeat scroll 0 0 transparent;
+    height: 30px;
+    line-height: 30px;
+    width: 254px;
+	border: 0 none;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    overflow: hidden;
+    vertical-align: middle;
+	margin-top:10px;
+	}
+#content .form-inner .yzmNum{position:absolute; right:0px; top:0px;}
+#content .form .lg-down{ width:450px;height:110px; margin:18px auto 10px;}
+#content .form .lg-down span{display:inline-block; width:189px; height:65px;margin-left:20px;margin-top:40px;background:url(images/xzzc.png) no-repeat left top;}
+#content .form. lg-down span a{display:block; width:189px; height:65px;}
+#content .form. lg-down .downup{background-position:0px 0px; margin-left:25px;}
+#content .form. lg-down .reguser{background-position:-209px 0px;}
+#footer{ width:960px; margin:80px auto 0px; padding-top:10px; font-size:12px; text-align:center;border-top: 1px solid #C8C8C8;}

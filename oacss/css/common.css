@@ -1,0 +1,24 @@
+/* CSS Reset */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, code, em, img, q, small, strong, dd, dl, dt, li, ol, ul, fieldset, form, label, table, tbody, tr, th, td, input { margin: 0; padding: 0 }
+body { font-size: 14px; font-family: "Microsoft Yahei", Tahoma, Arial, Helvetica, STHeiti; _font-family: Tahoma, Arial, Helvetica, STHeiti; cursor: default; }
+html.hasFontSmoothing-false body { font-family: Tahoma, Arial, Helvetica, STHeiti; }
+img, a img, :link img, :visited img { border: 0 }
+table { border-collapse: collapse }
+ul { list-style: none }
+q:before, q:after, blockquote:before, blockquote:after { content: "" }
+/* clearfix */
+.clear:after { content: "\u0020"; display: block; visibility: hidden; height: 0; clear: both; }
+.clear { zoom: 1;clear: both;height: 0;overflow: hidden; font-size: 0;line-height: 0; }
+/* links */
+a { color: #CCC; text-decoration: none; }
+a:hover { color: #999; text-decoration: none; }
+
+.aui_title { text-align: center; }
+.aui_state_focus .aui_title {  }
+.aui_close, .aui_state_noTitle .aui_close {  }
+.aui_state_drag .aui_title {  }
+.aui_inner { background: none; }
+.aui_content iframe{border:1px solid #000;border-radius:5px;}
+
+
+.lottery_logo1 { background-image: url(../images/lottery_logo1.png); }

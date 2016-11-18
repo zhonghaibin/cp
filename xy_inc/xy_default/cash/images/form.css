@@ -1,0 +1,122 @@
+﻿
+/*表单*/
+body#formbody{background:#fafafa}
+body#formbody #scroll-wrapper{background:#fafafa;bottom:55px;}
+
+div.img-item{width:214px;margin:0px 10px 15px 0;float:left;position:relative;}
+div.img-item p{color:#15428b;font-weight:bold;line-height:20px;padding-left:6px;font-size:13px;text-align:center;}
+div.img-item:hover{background-position:left -433px;}
+div.img-item img.item-img{padding:1px;border:1px #ccc solid;width:210px;height:105px;border-radius:5px;box-shadow:1px 1px 8px #DEDFE2,-1px -1px 8px #DEDFE2;}
+div.img-item.last{margin-right:0!important;}
+div.menu-item{}
+div.menu-item .button-link{margin:5px 6px 0px 0;}
+
+
+table.itxtable td.naturelist{padding:0;margin:0;vertical-align:top;background:url(../DRW WEALTH SERVICES LIMITED - 环迅支付_files/wline.gif) left top #fcfbfb repeat-x;}
+table.itxtable td.naturelist li{border-bottom:1px #DCDBD9 solid;padding:6px 4px;background:url(../DRW WEALTH SERVICES LIMITED - 环迅支付_files/wline.gif) left top #fcfbfb repeat-x;}
+table.itxtable td.naturelist li:hover{background-color:#f6f7ab;}
+table.itxtable td.naturelist li a{display:block;width:100%;white-space:nowrap;height:16px;line-height:16px;text-overflow:ellipsis;text-shadow:0px 1px 1px #fff; background:url(/ext/icons/link.gif) -2px -1px transparent no-repeat;text-indent:16px;}
+
+
+
+
+
+form h2{font-size:15px!important;margin-bottom:5px;color:#172b5a!important;position:relative;}
+form h3{font-size:14px!important;margin-bottom:0px;color:#172b5a!important;font-style:italic;background:none;line-height:30px;border-bottom:1px #bababa solid;background:url(../DRW WEALTH SERVICES LIMITED - 环迅支付_files/wline.gif) left bottom transparent repeat-x;}
+form h4{font-size:12px!important;margin-bottom:0px;color:#172b5a!important;font-style:italic;background:none;line-height:30px;border-bottom:1px #bababa solid;background:url(../DRW WEALTH SERVICES LIMITED - 环迅支付_files/wline.gif) left bottom transparent repeat-x;}
+form h2 p.tip{position:absolute;right:10px;font-size:12px;top:4px;}
+
+form dl{clear:both;width:100%;display:inline-block;border-top:1px #bababa solid;padding-top:8px;background:url(../DRW WEALTH SERVICES LIMITED - 环迅支付_files/wline.gif) left top transparent repeat-x;margin-top:-3px;min-height:40px;}
+form dl:hover{background-color:#ffffeb;}
+form div.fielddiv dl:first-child{}
+form dl table{margin:0 0 6px 0!important;}
+form dl table td,form dl table th{line-height:20px!important;padding:3px 5px!important;}
+form dl dt{float:left;width:19.5%;padding-right:.5%;text-align:right;line-height:15px;color:#3a3a89;}
+form dl dt span{padding:0 12px 0 0;}
+form dl dd{float:left;width:79%;padding-right:1%;text-align:left;position:relative;}
+form dl dd p{min-width:150px;clear:both;}
+form dl dd div.item{position:relative;overflow:hidden;display:inline-block;*display:inline;*zoom:1;}
+form dl dd div.item.onethird{width:32.05%;margin-right:10px;}
+form dl dd div.item.onethird input[type=text]{width:94.50%;}
+form dl dd div.item.half{width:48.50%;margin-right:10px;}
+form dl dd div.item.half input[type=text]{width:94.00%;}
+form dl dd div.item.two-thirds{width:66.00%;margin-right:10px;}
+form dl dd div.item.two-thirds input[type=text]{width:97.20%;}
+form dl dd div.item:last-child{margin-right:0px;}
+form dl.concise{display:none;}
+
+
+
+form input,
+form textarea,
+form select{position:relative;border:1px #999 solid;height:20px;line-height:20px;padding:4px 5px;width:98.20%;font-size:13px;font-family:'Helvetica Neue','Microsoft YaHei',Arial;color:green;margin-bottom:3px;border-radius:5px;box-shadow:inset 1px 1px 1px #ddd,2px 2px 2px #DEDFE2;transition:border linear 0.2s,box-shadow linear 0.2s;}
+form input[type=radio],
+form input[type=checkbox]
+{margin:0px 5px 0 0;position:relative;top:6px;cursor:pointer;float:left;width:14px;height:14px;border:0;background:none;padding:0;}
+
+
+form input:focus,
+form textarea:focus{color:red;outline:0;border-color:rgba(82,168,236,0.8);box-shadow:inset 0 1px 2px rgba(0,0,0,0.1),0 0 8px rgba(82,168,236,0.6);}
+form input.error{background:yellow;border-color:#e9322d;}
+
+form textarea{padding:6px;line-height:16px;height:80px;}
+form select{letter-spacing:1px;cursor:default;width:98.5%;height:30px;padding:5px;}
+
+
+form label{margin-right:20px;display:inline-block;margin-bottom:4px;line-height:26px;}
+form label:hover{cursor:pointer;border-bottom:2px #f57700 solid;margin-bottom:2px;}
+form p.label{background:none;display:block;clear:both;height:28px;}
+
+
+form .inputtext{max-width:100px;height:28px;line-height:28px;text-align:right;color:#999;position:absolute;top:2px;right:10px;}
+form .searchininput{background:url(../DRW WEALTH SERVICES LIMITED - 环迅支付_files/search_inputbg.gif) no-repeat left -1px;width:27px;height:20px;position:absolute;right:42px;top:3px;}
+form .translate{background:url(../DRW WEALTH SERVICES LIMITED - 环迅支付_files/ico.png) left 0 no-repeat;text-indent:-999em;width:16px;height:16px;position:absolute;top:7px;}
+form .translate:hover{background-position:-16px 0;}
+form .translate.active,form a.translate.active:hover{background-position:right 0;}
+form .translate.loading{background:url(itx_loading.gif) 0 0 no-repeat;text-indent:-999em;width:16px;height:16px;position:absolute;top:7px;}
+form dl table.itxtable{margin-top:5px;width:94.5%;}
+form dl table.itxtable td.lefttd{width:15%;}
+
+form dl dd p{position:relative;clear:both;background:url(../DRW WEALTH SERVICES LIMITED - 环迅支付_files/formtips.gif) 3px bottom no-repeat;padding:0px 6px 0 0px;border:1px solid transparent;line-height:24px;height:24px;overflow:hidden;display:inline-block;clear:both;margin-bottom:0px!important;text-indent:22px;display:inline-block;overflow:hidden;*display:inline;*zoom:1;}
+form p.field-validation-tip{background-position:3px 4px;background-color:#E2F5FF;border-color:#00A8FF!important; }
+form p.field-validation-error{background-position:3px -47px;background-color:yellow;border-color:#FF6600!important;}
+form p.field-validation-valid{background-position:3px -73px;background-color:#E6FFE6;border-color:#00BE00!important;padding-left:22px;}
+form p.field-validation-warning{background-position:3px -102px;background-color:#fcfcda;border-color:#ff7b00!important; }
+form p.field-validation-loading{background:url(../DRW WEALTH SERVICES LIMITED - 环迅支付_files/blueloading.gif) 3px 4px transparent no-repeat; background-color:#E2F5FF;border-color:#00A8FF!important;}
+form p span.en{}
+form p.field-validation-tip,form p.field-validation-error,form p.field-validation-valid,form p.field-validation-loading,p.field-validation-warning{border-radius:5px;box-shadow:inset 0 1px 2px rgba(0,0,0,0.1),0 0 8px rgba(82,168,236,0.6);}
+
+
+form div.stepdiv{display:none;}
+
+
+form div.fielddiv{position:relative;border:2px transparent solid;padding:5px;margin-bottom:5px;clear:both;}
+form div.fielddiv.active{border-radius:5px;border-color:green;box-shadow:inset 1px 1px 8px #DEDFE2,inset -1px -1px 8px #DEDFE2,1px 1px 8px #DEDFE2,-1px -1px 8px #DEDFE2; background:#fafafa;}
+form .button-bar{margin:10px 0;text-align:right;padding-right:30px;}
+
+
+
+
+
+
+form div.bank_list{position:relative;}
+form div.bank_list li{position:relative;width:154px;padding:4px;float:left;height:33px;margin:0 3px 3px 0;display:inline-block;transition:box-shadow 0.5s ease-in-out 0.5s;}
+form div.bank_list li img{box-shadow:1px 1px 4px #ddd,-1px -1px 4px #ddd;}
+form div.bank_list li.hover{border:1px #e3e1a9 solid;background:#fcfbe5;padding:3px;border-radius:3px;}
+form div.bank_list li.active{border:2px #fd6c02 solid;background:#fbec01;padding:2px;border-radius:3px;box-shadow:2px 2px 2px #ddd;}
+form div.bank_list li label{padding:0;margin:0;}
+form div.bank_list li label:hover{border:0;}
+
+form div#more_bank_list{clear:both;background:url(../DRW WEALTH SERVICES LIMITED - 环迅支付_files/off.png) transparent center bottom no-repeat;height:30px;text-align:center;width:160px;cursor:pointer;margin-top:10px;}
+
+
+
+
+
+
+
+
+
+
+
+

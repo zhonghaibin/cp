@@ -1,0 +1,109 @@
+@charset "utf-8";
+/*  */
+html {overflow:-moz-scrollbars-vertical; overflow-y:scroll;}
+font,div,td{font-size:12px;}
+dl,dt,dd{margin:0px; padding:0px; font-size:12px;}
+dt,dd{line-height:0px;}
+.b5 {height:1px; font-size:1px; overflow:hidden; display:block; background:#DDE0E5; margin:0 5px;}
+.b6 {height:1px; font-size:1px; overflow:hidden; display:block; background:#DDE0E5; margin:0 3px;}
+.b7 {height:1px; font-size:1px; overflow:hidden; display:block; background:#DDE0E5; margin:0 2px;}
+.b8 {height:2px; font-size:1px; overflow:hidden; display:block; background:#DDE0E5; margin:0 1px;}
+#chartsTable{
+	border-top:1px solid #CCCCFE;
+	border-left:1px solid #CCCCFE;
+}
+*{-webkit-user-drag: none;}
+tr{
+	text-align:center;
+}
+#chartsTable td{
+	border-bottom:1px solid #CCCCFE;
+	border-right:1px solid #CCCCFE;
+	height:20px;
+}
+.redtext{
+	color:red;
+}
+#title{
+	width:55px;
+	/*
+	height:25px;
+	background:#CD2903;
+	*/
+}
+#title {width:115px; text-align:center;}
+#head{
+	/*background:#99CCFF;*/
+}
+.ball01{
+	font-weight:bold;
+	color:#FFFFFF;
+	width:16px;
+	height:16px;
+	background:url(../images/chartBall02.gif) no-repeat center;
+}
+.ball02{
+	font-weight:bold;
+	color:#FFFFFF;
+	width:16px;
+	height:16px;
+	background:url(../images/chartBall01.gif) no-repeat center;
+}
+.ball03{
+	width:16px;
+	height:16px;
+	color:#33CCCC;
+}
+.ball04{
+	width:16px;
+	height:16px;
+	color:#FF9999;
+}
+.wdh{
+	width:16px;
+	height:25px;
+}
+#titlemessage{
+	height:35px;
+}
+#showissue{
+	width:53px;
+	height:21px;
+	border:0px solid #FFFFFF;
+}
+input{
+	border:1px solid #CCCCCC;
+}
+#quickbuy{
+	margin:20px 10px 20px 10px;
+	text-align:right;
+}
+#quickbuy a{
+	padding:13px 25px 13px 25px;
+	color:#FFFFFF;
+	font-weight:bold;
+}
+.tdleft{
+	padding-left:25px;
+	text-align:left;
+}
+.tdright{
+	text-align:right;
+}
+
+table #missedTable{
+	border:1px solid #FFFFFF;
+}
+#missedTable td{
+	border:1px solid #fff;
+}
+
+.none{
+	background:none!important;
+}
+
+esun\:*{behavior:url(#default#VML)}
+
+dl.tips{margin:30px 0px 20px;color:#999; text-align:left;}
+dl.tips dt{font-weight:bold; margin-bottom:5px;}
+dl.tips dd{margin-top:20px;}

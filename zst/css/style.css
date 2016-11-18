@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('basic.css');
+body{font-size:12px; text-align:center;}
+#header {
+	height:80px;
+	background:#B20000;
+	width:100%;
+	margin-bottom:0;
+}
+#header-inner {
+	position:relative;
+	width:990px;
+	height:80px;
+	margin:0 auto;
+}
+#header .logo {
+	padding-top:30px;
+	margin-left:50px;
+	font-size:22px;
+	font-weight:bold;
+	color:#FFF;
+}
+#content{margin:0 10px;}
+
+#footer{width:960px; margin:80px auto 0px; padding-top:10px; font-size:12px; text-align:center;border-top: 1px solid #C8C8C8;}

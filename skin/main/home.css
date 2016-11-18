@@ -1,0 +1,248 @@
+﻿* {
+	margin: 0;
+	padding: 0;
+	font-family:"微软雅黑";
+	font-size: 12px;
+}
+body {
+	text-align: center;
+}
+img {
+	border: 0;
+}
+a, a:visited {
+	text-decoration: none;
+	color: #0077c3;
+}
+a:hover {
+	color: #ff0000;
+}
+.homelayout {
+	width: 950px;
+	margin: auto;
+}
+.homelist {
+	border-radius: 10px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	background-color: #f1f1f1;
+	height: 140px;
+	padding-top: 20px;
+}
+.clist {
+	margin-left: 25px;
+}
+.clist li {
+	list-style: none;
+	float: left;
+	width: 110px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.clist li a, .clist li a:visited {
+	display: block;
+	background-color: #fff;
+	border: 1px #eee solid;
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: 14px;
+	color: #000;
+	padding-left:8px
+}
+.clist li a:hover {
+	background-color: #fff5f5;
+	border: 1px #ddd solid;
+}
+.clist li a span {
+	display: block;
+	text-align: center;
+	padding-bottom: 10px;
+}
+.homebox {
+	height: 350px;
+	position: relative;
+	text-align: left;
+}
+.homeboxleft {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 465px;
+	height: 330px;
+	border-radius: 8px;
+	border: 1px #eee solid;
+	background-color: #f9f9f9;
+}
+.homeboxright {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 465px;
+	height: 330px;
+	border-radius: 8px;
+	border: 1px #f0f0f0 solid;
+	background-color: #f9f9f9;
+}
+.hometitle {
+	background-color: #f0f0f0;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 5px 5px 0 0;
+	padding: 10px;
+	border-bottom: 3px #d70002 solid;
+	padding-left: 40px;
+	background-position: 10px center;
+	background-repeat: no-repeat;
+	font-family: 微软雅黑;
+	position: relative;
+	height: 20px;
+	color: #333;
+}
+.hometitle a, .hometitle a:visited {
+	position: absolute;
+	right: 15px;
+	top: 8px;
+	color: #fff;
+	border-radius: 5px;
+	padding: 2px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #d70002;
+	font-weight: normal;
+	font-size: 10px!important;
+	font-family: 微软雅黑;
+}
+#phb {
+	background-image: url('/images/common/icona.png');
+}
+#tips {
+	background-image: url('/images/common/iconb.png');
+}
+.phbtbl {
+	width: 100%;
+	border-collapse: collapse;
+}
+.phbtbl th {
+	padding: 5px;
+	line-height: 18px;
+	background-color: #fbeded;
+	text-align: center;
+	font-size: 14px;
+	color: #666;
+}
+.phbtbl td {
+	text-align: center;
+	padding: 5px;
+	line-height: 20px;
+	font-size: 14px;
+}
+.phbtbl td span {
+	border-radius: 5px;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #ddd;
+	color: #fff;
+}
+tr.phbtbl_color {
+	background-color: #fff;
+}
+ul.tipslist {
+    *width:435px; 
+}
+ul.tipslist li {
+	list-style: none;
+	padding:2px;
+	background-image: url('/images/common/point.jpg');
+	background-position: 10px 10px;
+	background-repeat: no-repeat;
+	padding-left: 25px;
+	width: 100%;
+	box-sizing: border-box;
+	position: relative;
+}
+ul.tipslist li a {
+	font-weight: bold;
+	color:#0078c3;
+}
+ul.tipslist li a:hover {
+	color:red;
+}
+ul.tipslist li em {
+	font-style: normal;
+	position: absolute;
+	right: 35px;
+	top: 4px;
+	color: #666;
+	overflow:auto;
+}
+span.tipstxt {
+    display:none;
+	padding-right: 10px;
+	padding-bottom:10px;
+    margin-bottom:-80px;
+	line-height: 18px;
+	box-sizing: border-box;
+	color: #666;
+	padding-top:5px;
+	width:385px;
+}
+span.jp
+{
+	background-image:url('/images/common/g.png');
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-color:transparent!important;
+	border-radius:0!important;
+	padding: 8px!important;
+	padding-left: 10px!important;
+	padding-right: 10px!important;
+
+}
+span.yp
+{
+	background-image:url('/images/common/s.png');
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-color:transparent!important;
+	border-radius:0!important;
+	padding: 8px!important;
+	padding-left: 10px!important;
+	padding-right: 10px!important;
+
+}
+span.tp
+{
+	background-image:url('/images/common/c.png');
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-color:transparent!important;
+	border-radius:0!important;
+	padding: 8px!important;
+	padding-left: 10px!important;
+	padding-right: 10px!important;
+
+}
+
+.btn
+{
+	background-color:#c32828;
+	line-height:20px;
+	padding:5px;
+	padding-left:20px;
+	padding-right:20px;
+	border:0;
+	margin-left:5px;
+	margin-right:5px;
+	color:#fff;
+	border-radius:5px;
+	background-image:url('/images/common/light.png');
+	background-position:left top;
+	background-repeat:repeat-x;
+	border:1px #dc4545 solid;
+	cursor:pointer
+}
+.btn:hover
+{
+	background-color:#e33f3f
+}

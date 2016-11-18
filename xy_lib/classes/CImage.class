@@ -1,0 +1,66 @@
+<?php
+/*
+ * $img=new CImage(72,22,15);
+ * $img->printimg('png');
+ */
+
+@session_start();
+class CImage{
+	public $width;
+	public $heigth;
+	public $sessionName='_jms_vcode';
+	public $type='png';
+	public $charlen=4;
+	public $fontSize=15;
+	public $ttf;
+	
+	private $img;
+	private $chars="0123456789";
+	
+	function __construct($width=48,$heigth=18,$fontSize=15){
+		$this->width=$width;
+		$this->heigth=$heigth;
+		$this->fontSize=$fontSize;
+		$this->img=imagecreate($this->width,$this->heigth);
+		$this->ttf=dirname(__FILE__).'/fonts/F2FOCRBczykLTStd-Regular.otf';
+		imagefill($this->img,0,0,imagecolorallocate($this->img,230,235,255)); 
+	}
+	
+	function writeChar($code){
+		$charlen=strlen($this->chars);
+		$fontLeft=-12;
+		for($i=0;$i<strlen($code);$i++){
+			$fontSize=mt_rand(-1,1)+$this->fontSize;
+			$fontLeft+=$fontSize+mt_rand(0,2);
+			$fontTop=$this->heigth-mt_rand(1,5);
+			$col=imagecolorallocate($this->img,rand(0,150),rand(0,150),rand(0,150));
+			imagettftext($this->img, $fontSize, mt_rand(-20,20), $fontLeft, $fontTop, $col, $this->ttf, $code{$i});
+		}
+	}
+	
+	function writeArc($i){
+		while($i--){
+			ImageArc($this->img,rand(1,$this->width),rand(10,$this->heigth),rand(20,$this->width),rand(1,$this->heigth),rand(1,360),300, imagecolorallocate($this->img,rand(0,120),rand(0,120),rand(0,120)));
+		}
+	}
+	
+	function writePix($i){
+		while($i--){
+			imagesetpixel($this->img,rand(0,$this->width),rand(0,$this->heigth),imagecolorallocate($this->img,rand(0,200),rand(0,200),rand(0,200)));
+		}
+	}
+	
+	function printimg($type){
+		header("content-type:image/$type");
+		$len=strlen($this->chars);
+		$code='';
+		for($i=0;$i<$this->charlen;$i++) $code.=$this->chars{mt_rand(0,$len-1)};
+		$_SESSION[$this->sessionName]=strtolower($code);
+		$this->writeChar($code);
+		//$this->writeArc(3);
+		$this->writePix(20);
+		$fun='image'.$type;
+		$fun($this->img);
+	}
+	
+}

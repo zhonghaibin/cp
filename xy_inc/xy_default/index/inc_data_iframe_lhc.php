@@ -1,0 +1,1 @@
+﻿<iframe name="data" src="/index.php/index/getHistoryData3/<?=$this->type;?>"  scrolling="auto" frameborder="0" height="121px" width="250px"></iframe>

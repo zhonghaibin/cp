@@ -1,0 +1,5 @@
+﻿#webems-body{box-shadow:2px 2px 8px #FBBF9E,-2px 2px 8px #FBBF9E;border-color:#f37101;}
+header,footer{background-color:#f37101;}
+footer div.scroll-bbar button{box-shadow:-4px -4px 2px #d85a00;}
+footer div.webems-tab-button a{box-shadow:1px 1px 4px #ff6300,-1px -1px 4px #ff6300;}
+footer div.webems-tab-button a.active{box-shadow:1px 1px 4px #c66700,-1px -1px 4px #c66700;}

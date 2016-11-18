@@ -1,0 +1,566 @@
+﻿@charset "utf-8";
+
+/* 香港六合彩  万金娱乐  QQ:421991377*/
+
+.dGameStatus table{
+    border-collapse: collapse;
+    float: left;
+    margin: 0 5px 5px;
+	width: 910px;
+}
+
+.dGameStatus table th {
+    background: none repeat scroll 0 0 #D8D3BD;
+    color: #333333;
+    font-weight: normal;
+    line-height: 150%;
+}
+.dGameStatus table tr.Title {
+    font-weight: bold;
+    line-height: 200%;
+}
+.dGameStatus table .sRte{
+    display: inline-block;
+    font-weight: bold;
+    line-height: 200%;
+    padding: 0 2px 0 0;
+    text-align: right;
+}
+.dGameStatus table input{
+    border: 1px solid #999999;
+    height: 17px;
+    margin: 3px 0 0;
+    padding: 1px 2px 0 1px;
+    text-align: right;
+    width: 33px;
+	text-align:center;
+}
+.dGameStatus table input.buttonAdd {
+    background: none repeat scroll 0 0 #CC0000;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+    height: auto;
+    margin: 5px 10px;
+    padding: 5px 10px;
+    width: auto;
+}
+.dGameStatus a.instructionsLink:link, .dGameStatus a.instructionsLink:visited {
+	float:right;
+	display:block;
+	height:22px;
+	width:70px;
+	line-height:200%;
+	line-height:230% \9;
+	color:#FFF;
+	background:url(../images/lhc/icon.png) 0 -100px;
+	margin:0 5px 0 0;
+	*margin:-27px 5px 0 0;
+	padding:0 0 0 10px;
+	overflow:hidden;
+	font-weight:normal
+}
+.dGameStatus a.instructionsLink:hover { background:url(../images/lhc/icon.png) 0 -125px }
+.dGameStatus table.instructions { color:#333; border:none; display:none;}
+.dGameStatus table.instructions td { text-align:left; padding:10px; background:#FFFF99 }
+.dGameStatus table.instructions th { background:#F9F5EE }
+.dGameStatus table.instructions input {
+	float:right;
+	height:20px;
+	width:60px;
+	padding:0 5px 2px 20px;
+	cursor:pointer;
+	clear:both;
+	margin:-2px -1px 10px 0;
+	background:url(../images/lhc/icon.png) 0 -150px;
+	border:0;
+	line-height:180%
+}
+.dGameStatus table.instructions img { float:right; margin:0 0 0 5px }
+.sNum, .sNumL { background:#FFD400; color:#000; font-size:16px; padding:0 3px; border:1px solid #999 }
+.sNum { margin:2px -1px 2px 0 }
+.sNumL { margin:0 0 0 2px; float:left; width:17px }
+
+.dGameStatus {
+	background: url("../images/lhc/GameStatusbg.png") no-repeat scroll left bottom #FFFFFF;
+ 	margin: 0 auto;
+    overflow: hidden;
+    width: 938px;
+	color:#333;
+	
+	}
+.dGameStatus .sTitle {
+	background: url("../images/lhc/GameStatusTitle.png") repeat scroll center 0; color: #333333;
+    display: block;
+    float: left;
+    font-weight: bold;
+    height: 25px;
+    line-height: 230%;
+    margin: 0 0 5px;
+    overflow: hidden;
+    text-align: center;
+    width: 915px;
+	}
+.dGameStatus .sNote { color:#9A0406 }
+.dGameStatus table, .dGameStatus table td{
+    background: none repeat scroll 0 0 #E5E1CE;
+    border: 1px solid #FFFFFF;
+    text-align: center;
+	padding:3px 5px;
+}
+.dGameStatus table .boldborder{
+    border-right: 3px solid #FFFFFF;
+}	
+.dGameStatus table .boldborder label{color:#333;}
+.dGameStatus table.sQuickmenu { border:1px solid #F9F5EE }
+.dGameStatus table.sQuickmenu tr td { text-align:right; color:#999; border:1px solid #F9F5EE;padding-right:30px; }
+.dGameStatus table tr td.space, .dGameStatus1 table tr td.space {
+    background: none repeat scroll 0 0 #D8D2B8;
+}
+.dGameStatus a:link, .dGameStatus a:visited {
+    color: #0099CC;
+    line-height: 150%;
+    padding: 1px 3px;
+    text-decoration: none;
+}
+.dGameStatus a:hover {
+    background: none repeat scroll 0 0 #0099CC;
+    color: #FFFFFF;
+}
+
+.sCBHKball_01, .sCBHKball_02, .sCBHKball_03, .sCBHKball_04, .sCBHKball_05, .sCBHKball_06, .sCBHKball_07, .sCBHKball_08, .sCBHKball_09, .sCBHKball_10, .sCBHKball_11, .sCBHKball_12, .sCBHKball_13, .sCBHKball_14, .sCBHKball_15, .sCBHKball_16, .sCBHKball_17, .sCBHKball_18, .sCBHKball_19, .sCBHKball_20, .sCBHKball_21, .sCBHKball_22, .sCBHKball_23, .sCBHKball_24, .sCBHKball_25, .sCBHKball_26, .sCBHKball_27, .sCBHKball_28, .sCBHKball_29, .sCBHKball_30, .sCBHKball_31, .sCBHKball_32, .sCBHKball_33, .sCBHKball_34, .sCBHKball_35, .sCBHKball_36, .sCBHKball_37, .sCBHKball_38, .sCBHKball_39, .sCBHKball_40, .sCBHKball_41, .sCBHKball_42, .sCBHKball_43, .sCBHKball_44, .sCBHKball_45, .sCBHKball_46, .sCBHKball_47, .sCBHKball_48, .sCBHKball_49 {
+				float:left;
+				display:block;
+				width:25px;
+				height:25px;
+				margin:0 0 0 10px;
+				_margin:0 0 0 5px;
+				background:url(../images/lhc/ball.png)
+			}
+.sCBHKball_01 {
+    background-position: 0 0;
+}
+.sCBHKball_02 {
+    background-position: 0 -25px;
+}
+.sCBHKball_03 {
+    background-position: 0 -50px;
+}
+.sCBHKball_04 {
+    background-position: 0 -75px;
+}
+.sCBHKball_05 {
+    background-position: 0 -100px;
+}
+.sCBHKball_06 {
+    background-position: 0 -125px;
+}
+.sCBHKball_07 {
+    background-position: 0 -150px;
+}
+.sCBHKball_08 {
+    background-position: 0 -175px;
+}
+.sCBHKball_09 {
+    background-position: 0 -200px;
+}
+.sCBHKball_10 {
+    background-position: 0 -225px;
+}
+.sCBHKball_11 {
+    background-position: -25px 0;
+}
+.sCBHKball_12 {
+    background-position: -25px -25px;
+}
+.sCBHKball_13 {
+    background-position: -25px -50px;
+}
+.sCBHKball_14 {
+    background-position: -25px -75px;
+}
+.sCBHKball_15 {
+    background-position: -25px -100px;
+}
+.sCBHKball_16 {
+    background-position: -25px -125px;
+}
+.sCBHKball_17 {
+    background-position: -25px -150px;
+}
+.sCBHKball_18 {
+    background-position: -25px -175px;
+}
+.sCBHKball_19 {
+    background-position: -25px -200px;
+}
+.sCBHKball_20 {
+    background-position: -25px -225px;
+}
+.sCBHKball_21 {
+    background-position: -50px 0;
+}
+.sCBHKball_22 {
+    background-position: -50px -25px;
+}
+.sCBHKball_23 {
+    background-position: -50px -50px;
+}
+.sCBHKball_24 {
+    background-position: -50px -75px;
+}
+.sCBHKball_25 {
+    background-position: -50px -100px;
+}
+.sCBHKball_26 {
+    background-position: -50px -125px;
+}
+.sCBHKball_27 {
+    background-position: -50px -150px;
+}
+.sCBHKball_28 {
+    background-position: -50px -175px;
+}
+.sCBHKball_29 {
+    background-position: -50px -200px;
+}
+.sCBHKball_30 {
+    background-position: -50px -225px;
+}
+.sCBHKball_31 {
+    background-position: -75px 0;
+}
+.sCBHKball_32 {
+    background-position: -75px -25px;
+}
+.sCBHKball_33 {
+    background-position: -75px -50px;
+}
+.sCBHKball_34 {
+    background-position: -75px -75px;
+}
+.sCBHKball_35 {
+    background-position: -75px -100px;
+}
+.sCBHKball_36 {
+    background-position: -75px -125px;
+}
+.sCBHKball_37 {
+    background-position: -75px -150px;
+}
+.sCBHKball_38 {
+    background-position: -75px -175px;
+}
+.sCBHKball_39 {
+    background-position: -75px -200px;
+}
+.sCBHKball_40 {
+    background-position: -75px -225px;
+}
+.sCBHKball_41 {
+    background-position: -100px 0;
+}
+.sCBHKball_42 {
+    background-position: -100px -25px;
+}
+.sCBHKball_43 {
+    background-position: -100px -50px;
+}
+.sCBHKball_44 {
+    background-position: -100px -75px;
+}
+.sCBHKball_45 {
+    background-position: -100px -100px;
+}
+.sCBHKball_46 {
+    background-position: -100px -125px;
+}
+.sCBHKball_47 {
+    background-position: -100px -150px;
+}
+.sCBHKball_48 {
+    background-position: -100px -175px;
+}
+.sCBHKball_49 {
+    background-position: -100px -200px;
+}
+.dGameStatus .sBallRed{
+    background: url("../images/lhc/GameStatusBallColor.png") repeat-x scroll 0 0;
+}
+.dGameStatus .sBallBlue{
+    background: url("../images/lhc/GameStatusBallColor.png") repeat-x scroll 0 -20px;
+}
+.dGameStatus .sBallGreen{
+    background: url("../images/lhc/GameStatusBallColor.png") repeat-x scroll 0 -40px;
+}
+.dGameStatus .sGameStatusItem{
+    background: url("../images/lhc/GameStatusItembg.png") repeat-x scroll 0 0;
+}
+.dGameStatus .sGameStatusItem, .dGameStatus .sBallRed, .dGameStatus .sBallBlue, .dGameStatus .sBallGreen{
+    color: #000;
+    display: block;
+    height: 20px;
+    line-height: 150%;
+    margin: 0 1px;
+    overflow: hidden;
+    padding: 0 3px;
+    text-align: center;
+    width: auto;
+}
+
+/* 开奖结果 */
+#lhcResult .sCBHKball_01, #lhcResult .sCBHKball_02, #lhcResult .sCBHKball_03, #lhcResult .sCBHKball_04, #lhcResult .sCBHKball_05, #lhcResult .sCBHKball_06, #lhcResult .sCBHKball_07, #lhcResult .sCBHKball_08, #lhcResult .sCBHKball_09, #lhcResult .sCBHKball_10, #lhcResult .sCBHKball_11, #lhcResult .sCBHKball_12, #lhcResult .sCBHKball_13, #lhcResult .sCBHKball_14, #lhcResult .sCBHKball_15, #lhcResult .sCBHKball_16, #lhcResult .sCBHKball_17, #lhcResult .sCBHKball_18, #lhcResult .sCBHKball_19, #lhcResult .sCBHKball_20, #lhcResult .sCBHKball_21, #lhcResult .sCBHKball_22, #lhcResult .sCBHKball_23, #lhcResult .sCBHKball_24, #lhcResult .sCBHKball_25, #lhcResult .sCBHKball_26, #lhcResult .sCBHKball_27, #lhcResult .sCBHKball_28, #lhcResult .sCBHKball_29, #lhcResult .sCBHKball_30, #lhcResult .sCBHKball_31, #lhcResult .sCBHKball_32, #lhcResult .sCBHKball_33, #lhcResult .sCBHKball_34, #lhcResult .sCBHKball_35, #lhcResult .sCBHKball_36, #lhcResult .sCBHKball_37, #lhcResult .sCBHKball_38, #lhcResult .sCBHKball_39, #lhcResult .sCBHKball_40, #lhcResult .sCBHKball_41, #lhcResult .sCBHKball_42, #lhcResult .sCBHKball_43, #lhcResult .sCBHKball_44, #lhcResult .sCBHKball_45, #lhcResult .sCBHKball_46, #lhcResult .sCBHKball_47, #lhcResult .sCBHKball_48, #lhcResult .sCBHKball_49 { background: url("../images/lhc/result_ball.png"); float:left;display:block;width:25px;height:25px;text-indent:-9999px;}
+#lhcResult .sCBHKball_01 {
+    background-position: 0 0;
+}
+#lhcResult .sCBHKball_02 {
+    background-position: 0 -25px;
+}
+#lhcResult .sCBHKball_03 {
+    background-position: 0 -50px;
+}
+#lhcResult .sCBHKball_04 {
+    background-position: 0 -75px;
+}
+#lhcResult .sCBHKball_05 {
+    background-position: 0 -100px;
+}
+#lhcResult .sCBHKball_06 {
+    background-position: 0 -125px;
+}
+#lhcResult .sCBHKball_07 {
+    background-position: 0 -150px;
+}
+#lhcResult .sCBHKball_08 {
+    background-position: 0 -175px;
+}
+#lhcResult .sCBHKball_09 {
+    background-position: 0 -200px;
+}
+#lhcResult .sCBHKball_10 {
+    background-position: 0 -225px;
+}
+#lhcResult .sCBHKball_11 {
+    background-position: -25px 0;
+}
+#lhcResult .sCBHKball_12 {
+    background-position: -25px -25px;
+}
+#lhcResult .sCBHKball_13 {
+    background-position: -25px -50px;
+}
+#lhcResult .sCBHKball_14 {
+    background-position: -25px -75px;
+}
+#lhcResult .sCBHKball_15 {
+    background-position: -25px -100px;
+}
+#lhcResult .sCBHKball_16 {
+    background-position: -25px -125px;
+}
+#lhcResult .sCBHKball_17 {
+    background-position: -25px -150px;
+}
+#lhcResult .sCBHKball_18 {
+    background-position: -25px -175px;
+}
+#lhcResult .sCBHKball_19 {
+    background-position: -25px -200px;
+}
+#lhcResult .sCBHKball_20 {
+    background-position: -25px -225px;
+}
+#lhcResult .sCBHKball_21 {
+    background-position: -50px 0;
+}
+#lhcResult .sCBHKball_22 {
+    background-position: -50px -25px;
+}
+#lhcResult .sCBHKball_23 {
+    background-position: -50px -50px;
+}
+#lhcResult .sCBHKball_24 {
+    background-position: -50px -75px;
+}
+#lhcResult .sCBHKball_25 {
+    background-position: -50px -100px;
+}
+#lhcResult .sCBHKball_26 {
+    background-position: -50px -125px;
+}
+#lhcResult .sCBHKball_27 {
+    background-position: -50px -150px;
+}
+#lhcResult .sCBHKball_28 {
+    background-position: -50px -175px;
+}
+#lhcResult .sCBHKball_29 {
+    background-position: -50px -200px;
+}
+#lhcResult .sCBHKball_30 {
+    background-position: -50px -225px;
+}
+#lhcResult .sCBHKball_31 {
+    background-position: -75px 0;
+}
+#lhcResult .sCBHKball_32 {
+    background-position: -75px -25px;
+}
+#lhcResult .sCBHKball_33 {
+    background-position: -75px -50px;
+}
+#lhcResult .sCBHKball_34 {
+    background-position: -75px -75px;
+}
+#lhcResult .sCBHKball_35 {
+    background-position: -75px -100px;
+}
+#lhcResult .sCBHKball_36 {
+    background-position: -75px -125px;
+}
+#lhcResult .sCBHKball_37 {
+    background-position: -75px -150px;
+}
+#lhcResult .sCBHKball_38 {
+    background-position: -75px -175px;
+}
+#lhcResult .sCBHKball_39 {
+    background-position: -75px -200px;
+}
+#lhcResult .sCBHKball_40 {
+    background-position: -75px -225px;
+}
+#lhcResult .sCBHKball_41 {
+    background-position: -100px 0;
+}
+#lhcResult .sCBHKball_42 {
+    background-position: -100px -25px;
+}
+#lhcResult .sCBHKball_43 {
+    background-position: -100px -50px;
+}
+#lhcResult .sCBHKball_44 {
+    background-position: -100px -75px;
+}
+#lhcResult .sCBHKball_45 {
+    background-position: -100px -100px;
+}
+#lhcResult .sCBHKball_46 {
+    background-position: -100px -125px;
+}
+#lhcResult .sCBHKball_47 {
+    background-position: -100px -150px;
+}
+#lhcResult .sCBHKball_48 {
+    background-position: -100px -175px;
+}
+#lhcResult .sCBHKball_49 {
+    background-position: -100px -200px;
+}
+.dGameStatus label {display:inline-block; line-height:170%; margin:0 auto; text-align:left; padding:0 5px 0 0;color:#333;}
+table input.inputnoborder { border:none; width:20px; color:#333;}
+.dGameStatus table label input.inputnoborder { float:left; margin:0 }
+/*结果*/
+#dResult {
+		/*background: url("../images/lhc/GameStatusTitle.png") repeat scroll left bottom;*/
+		background-color:#FFF;
+		display:block;
+		width:600px;
+		height:38px;
+		color:#333;
+		padding:0 338px 0 0;
+		line-height:240%;
+		line-height:250% \9;
+	}
+#dResult span, #dResult input { float:right }
+#dResult input {
+    height: 23px;
+	width: 50px;
+    margin: 3px 0 0 10px;
+}
+#dResult input.beishu{
+	width:50px;
+	height:20px;
+	margin:4px 0 0 5px;
+	padding:0 5px;
+	background:#FFF;
+	border:1px solid #999999;
+	color:#9A0406;
+	text-align:right;
+	line-height:150%;
+	line-height:130% \9;
+	font-size:14px;
+	font-weight:bold;
+	margin-right:10px;
+}
+#dResult span {font-weight:bold; margin-right:5px; }
+#dResult .sTotal {
+			width:80px;
+			height:20px;
+			margin:4px 0 0 5px;
+			padding:0 5px;
+			background:#FFF;
+			border:1px solid #999999;
+			color:#9A0406;
+			text-align:right;
+			line-height:150%;
+			line-height:130% \9;
+			font-size:14px
+		}
+
+
+/*其它*/
+.dGameStatus .specialtable {
+    float: left;
+    margin: 0 0 5px 5px;
+    width: auto;
+}
+.dGameStatus .betnum, .dGameStatus .betnum1 {
+    float: right;
+	margin-right:20px;
+}
+.dGameStatus .betnum {
+    width: 160px;
+}
+.dGameStatus .betnum1 {
+    width: 275px;
+}
+.betnum #mulCollocation, .betnum1 #mulCollocation {
+    border: 0 none;
+    font-size: 12px;
+    line-height: 150%;
+    margin: 0;
+    overflow-y: auto;
+    padding: 5px;
+    text-align: left;
+}
+.betnum #mulCollocation {
+    height: 297px;
+    width: 158px;
+}
+.betnum1 #mulCollocation {
+    height: 277px;
+    width: 273px;
+}
+.specialtable input.del {
+    background: none repeat scroll 0 0 #EAEAEA;
+    border: medium none;
+    color: #FF0000;
+    cursor: pointer;
+}
+.sCBHKball_colornumselect {
+    background: none repeat scroll 0 0 #FFE7BF;
+    display: block;
+    height: 25px;
+    width: 27px;
+}
+.addLine {
+    float: right;
+    margin: 0 220px 0 0;
+}
+/*开奖号码*/
+.content06 .hao-qx{padding:10px 40px;}
+.content1 div{margin:auto;}
+/* 香港六合彩 结束 */
+
+

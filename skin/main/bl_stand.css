@@ -1,0 +1,35 @@
+/*标准化*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td
+{margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6
+{font-size:100%}
+ol,ul
+{list-style:none;}
+/*font-style,font-weight*/
+address,caption,cite,code,dfn,em,strong,th,var
+{font-style:normal; font-weight:normal;}
+/*del table border*/
+table
+{border-collapse:collapse;border-spacing:0;}
+/*del fieldset and img border*/
+fieldset,img
+{border:0;}
+/*caption and th text-align:left*/
+caption,th
+{text-align:left;}
+q:before,q:after
+{content:'';}
+a{text-decoration:none;}
+input,select,textarea{font-size:12px;vertical-align:middle;}
+
+em,i{font-size:12px;font-style:normal;}
+html .clearfix{*zoom:1}
+
+.hand{cursor:pointer;}
+.hide{display:none;}
+.clear{clear:both; height:0px; font-size:0px; line-height:0px;}
+.clearfix:after{content:" ";display:block;clear:both;visibility:hidden;}
+.mt5{margin-top:5px;}.mt10{margin-top:10px;}
+.mb5{margin-bottom:5px;}.mb10{margin-bottom:10px;}
+.ml5{margin-left:5px;}.ml10{margin-left:10px;}
+.mr5{margin-right:5px;}.mr10{margin-right:10px;}

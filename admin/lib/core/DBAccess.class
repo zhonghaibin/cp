@@ -1,0 +1,340 @@
+<?php
+/**
+ * 数据库操作类，继承自PDO，PDO常用的方法如下：
+ * PDO->beginTransaction() — 标明回滚起始点
+ * PDO->commit() — 标明回滚结束点，并执行 SQL
+ * PDO->__construct() — 建立一个 PDO 链接数据库的实例
+ * PDO->errorCode() — 获取错误码
+ * PDO->errorInfo() — 获取错误的信息
+ * PDO->exec() — 处理一条 SQL 语句，并返回所影响的条目数
+ * PDO->getAttribute() — 获取一个“数据库连接对象”的属性
+ * PDO->getAvailableDrivers() — 获取有效的 PDO 驱动器名称
+ * PDO->lastInsertId() — 获取写入的最后一条数据的主键值
+ * PDO->prepare() — 生成一个“查询对象”
+ * PDO->query() — 处理一条 SQL 语句，并返回一个“PDOStatement”
+ * PDO->quote() — 为某个 SQL 中的字符串添加引号
+ * PDO->rollBack() — 执行回滚
+ * PDO->setAttribute() — 为一个“数据库连接对象”设定属性
+ * PDOStatement->bindColumn() — Bind a column to a PHP variable
+ * PDOStatement->bindParam() — Binds a parameter to the specified variable name
+ * PDOStatement->bindValue() — Binds a value to a parameter
+ * PDOStatement->closeCursor() — Closes the cursor, enabling the statement to be executed again.
+ * PDOStatement->columnCount() — Returns the number of columns in the result set
+ * PDOStatement->errorCode() — Fetch the SQLSTATE associated with the last operation on the
+ * statement handle
+ * PDOStatement->errorInfo() — Fetch extended error information associated with the last operation
+ * on the statement handle
+ * PDOStatement->execute() — Executes a prepared statement
+ * PDOStatement->fetch() — Fetches the next row from a result set
+ * PDOStatement->fetchAll() — Returns an array containing all of the result set rows
+ * PDOStatement->fetchColumn() — Returns a single column from the next row of a result set
+ * PDOStatement->fetchObject() — Fetches the next row and returns it as an object.
+ * PDOStatement->getAttribute() — Retrieve a statement attribute
+ * PDOStatement->getColumnMeta() — Returns metadata for a column in a result set
+ * PDOStatement->nextRowset() — Advances to the next rowset in a multi-rowset statement handle
+ * PDOStatement->rowCount() — Returns the number of rows affected by the last SQL statement
+ * PDOStatement->setAttribute() — Set a statement attribute
+ * PDOStatement->setFetchMode() — Set the default fetch mode for this statement
+ */
+class DBAccess extends PDO{
+	private $charset;
+	public $cacheDir='_cache_$98sdf29@fw!d#s4fef/';
+	public $prename;
+	public $time;
+	function __construct($dsn, $user='', $password=''){
+		try{
+			parent::__construct($dsn, $user, $password);
+		}catch(Exception $e){
+			throw new Exception('连接数据库失败');
+		}
+		$this->time=intval($_SERVER['REQUEST_TIME']);
+	}
+
+	public function __get($name){
+		if(method_exists($this, $method='get'.ucfirst($name))){
+			return $this->$method();
+		}else{
+			return $this->$name;
+		}
+	}
+
+	public function __set($name, $value){
+		if(method_exists($this, $method='set'.ucfirst($name))){
+			$this->$method($value);
+		}else{
+			$this->$name=$value;
+		}
+	}
+	
+	public function getCacheDir(){
+		return $this->cacheDir;
+	}
+
+	public function setCharset($charset){
+		if($charset && $this->charset!=$charset){
+			$this->charset=$charset;
+			$this->query('set names '.$charset);
+		}
+	}
+
+	public function setCacheDir($dir){
+		self::mkdir($dir);
+		$this->cacheDir=$dir;
+	}
+
+	// 读取操作
+	//{{{
+	public function getRows($sql, $params=null, $expire=0){
+		if($expire){
+
+			if(is_file($file=$this->getCacheDir().md5($sql.serialize($params))) && filemtime($file)+$expire>$this->time){
+				return unserialize(file_get_contents($file));
+			}else{
+				file_put_contents($file, serialize($data=$this->getRows($sql, $params)));
+				return $data;
+			}
+
+		}else{
+
+			$stmt=$this->prepare($sql);
+			if(!is_array($params)){
+				// 如果传入的是一个值
+				$params=array($params);
+			}
+                        $this->setCharset(utf8);
+			$stmt->execute($params);
+			$stmt->setFetchMode(PDO::FETCH_ASSOC);
+			$return=$stmt->fetchAll();
+			$stmt=null;
+			return $return;
+
+		}
+	//}}}
+	}
+	
+	public function getObject($sql, $field, $params=null, $expire=0){
+		//echo $sql;exit;
+		if($expire){
+			//var_dump($this->getCacheDir());exit;
+			if(is_file($file=$this->getCacheDir().md5($sql.serialize($params))) && filemtime($file)+$expire>$this->time){
+				return unserialize(file_get_contents($file));
+			}else{
+				file_put_contents($file, serialize($data=$this->getObject($sql, $field, $params)));
+				return $data;
+			}
+
+		}else{
+
+			$stmt=$this->prepare($sql);
+			if(!is_array($params)){
+				// 如果传入的是一个值
+				$params=array($params);
+			}
+                        $this->setCharset(utf8);
+			$stmt->execute($params);
+			$stmt->setFetchMode(PDO::FETCH_ASSOC);
+			$return=$stmt->fetchAll();
+			$stmt=null;
+			
+			//print_r($return);exit;
+			
+			$data=array();
+			if($return) foreach($return as $var){
+				$data[$var[$field]]=$var;
+			}
+			//print_r($data);exit;
+			return $data;
+
+		}
+	}
+
+	public function getPage($sql, $page=1, $pageSize=10, $params=null, $expire=0){
+	//{{{
+		if($expire){
+
+			if(is_file($file=$this->getCacheDir().md5($sql.serialize($params))) && filemtime($file)+$expire>$this->time){
+				return unserialize(file_get_contents($file));
+			}else{
+				file_put_contents($file, serialize($data=$this->getPage($sql, $page, $pageSize, $params)));
+				return $data;
+			}
+
+		}else{
+			$stmt=$this->prepare($sql);
+			if(!is_array($params)){
+				// 如果传入的是一个值
+				$params=array($params);
+			}
+                        $this->setCharset(utf8);
+			$stmt->execute($params);
+			$stmt->setFetchMode(PDO::FETCH_ASSOC);
+
+			$return['total']=$stmt->rowCount();
+			if($return['total']<=$pageSize){
+				$return['data']=$stmt->fetchAll();
+			}elseif($page<=1){
+				for($i=0;$i<$pageSize; $i++) $return['data'][]=$stmt->fetch();
+			}else{
+				$pageCount=ceil($return['total']/$pageSize);
+				if($page>$pageCount) $page=$pageCount;
+				$startRow=($page-1)*$pageSize;//echo $page;
+				$sql.=" limit $startRow, $pageSize";//echo $sql;
+				$return['data']=$this->getRows($sql, $params);
+			}
+			$stmt=null;
+			return $return;
+		}
+	//}}}
+	}
+
+	public function getRow($sql, $params=null, $expire=0){//{{{
+		if($expire){
+
+			if(is_file($file=$this->getCacheDir().md5($sql.serialize($params))) && filemtime($file)+$expire>$this->time){
+				return unserialize(file_get_contents($file));
+			}else{
+				file_put_contents($file, serialize($data=$this->getRow($sql, $params)));
+				return $data;
+			}
+
+		}else{
+
+			$stmt=$this->prepare($sql);
+			if(!is_array($params)){
+				// 如果传入的是一个值
+				$params=array($params);
+			}
+                        $this->setCharset(utf8);
+			$stmt->execute($params);
+			$stmt->setFetchMode(PDO::FETCH_ASSOC);
+			$return=$stmt->fetch();
+			$stmt=null;
+			return $return;
+		}
+	//}}}
+	}
+
+	public function  getCol($sql, $params=null, $expire=0){
+		if($expire){
+
+			if(is_file($file=$this->getCacheDir().md5($sql.serialize($params))) && filemtime($file)+$expire>$this->time){
+				return unserialize(file_get_contents($file));
+			}else{
+				file_put_contents($file, serialize($data=$this->getCol($sql, $params)));
+				return $data;
+			}
+
+		}else{
+
+			$stmt=$this->prepare($sql);
+			if(!is_array($params)){
+				// 如果传入的是一个值
+				$params=array($params);
+			}
+                        $this->setCharset(utf8);
+			$stmt->execute($params);
+			$ret=array();
+			while(($val=$stmt->fetchColumn())!==false) $ret[]=$val;
+			$stmt=null;
+			return $ret;
+		}
+	}
+
+	public function getValue($sql, $params=null, $expire=0){
+		if($expire){
+
+			if(is_file($file=$this->getCacheDir().md5($sql.serialize($params))) && filemtime($file)+$expire>$this->time){
+				return file_get_contents($file);
+			}else{
+				file_put_contents($file, $data=$this->getValue($sql, $params));
+				return $data;
+			}
+
+		}else{
+
+			$stmt=$this->prepare($sql);
+			if(!is_array($params)){
+				// 如果传入的是一个值
+				$params=array($params);
+			}
+                        $this->setCharset(utf8);
+			$stmt->execute($params);
+			$return=$stmt->fetchColumn();
+			$stmt=null;
+			return $return;
+		}
+	}
+	//}}}
+
+	// 写操作
+	//{{{
+	public function update($query, $params=null){
+		return $this->insert($query, $params);
+	}
+
+	public function delete($query, $params=null){
+		return $this->update($query, $params);
+	}
+
+	public function setRows($table, $data, $valueKeys){
+
+	}
+
+	public function updateRows($table, $data, $where){
+		$sql="update $table set";
+		foreach($data as $key=>$_v) $sql.=" $key=:$key,";
+		$sql=rtrim($sql, ',')." where $where";
+		return $this->update($sql, $data);
+	}
+
+	public function insert($query, $params=null){
+		if($params && !is_array($params)) $params=array($params);
+		if($params){
+			if(!$stmt=$this->prepare($query)){
+				throw new Exception('解析查询语句出错，SQL语句：'.$query);
+			}
+
+			if(!$return=$stmt->execute($params)){
+				$err=$stmt->errorInfo();
+				throw new Exception(end($err));
+			}
+			return $return;
+		}else{
+			if($this->exec($query)){
+				return true;
+			}else{
+				$err=$this->errorInfo();
+				throw new Exception(end($err));
+			}
+		}
+	}
+
+	public function insertRow($table, $data){
+		$sql="insert into $table(";
+		$values='';
+		foreach($data as $key=>$val){
+			if($values){
+				$sql.=', ';
+				$values.=', ';
+			}
+			$sql.="`$key`";
+			$values.=":$key";
+		}
+		$sql.=") values($values)";
+
+		return $this->insert($sql, $data);
+	}
+
+	public function insertRows($table, $data){
+
+	}
+
+	//}}}
+
+	/**
+	 * 创建深层目录
+	 */
+	public static final function mkdir($dir, $mode=0777){
+		return is_dir($dir) || self::mkdir(dirname($dir), $mode) && mkdir($dir, $mode);
+	}
+}

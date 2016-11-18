@@ -1,0 +1,35 @@
+﻿/* CSS Document */
+html{ background:#f0f0f0;font-family:微软雅黑;}
+a{color:#000;}
+.w1280{width:1000px;margin:0px auto;}
+.PageHeader{height:65px;line-height:65px;}
+.CT .login_t{ width:261px; height:67px; background:url(/images/login_p.png) -22px -187px no-repeat;}
+.PageHeader .CT ul li{float:left;margin-top:17px;margin-right:10px;}
+.PageHeader .CT ul li a{color:#555555; background:url(/images/login_p.png) -247px -15px no-repeat;text-align:center;width:80px;line-height:27px;display:block;}
+.Page_CT{min-height:548px;}
+.Page_CT .CTL{margin-left:100px;margin-top:220px;}
+.Page_CT .CTL p{color:#203854;font-family:微软雅黑;font-size:30px;text-align:center;}
+.Page_CT .CTR{margin-top:80px;padding:50px;width:320px;height:260px;background:#ebebeb;border:1px solid #ccc;border-radius:10px;}
+.Page_CT .CTR h4{font-size:20px;font-family:微软雅黑;}
+.Page_CT .CTR p{margin-top:15px;}
+.Page_CT .CTR .txt{padding-left:55px;}
+.Page_CT .CTR .txt input{height:50px;line-height:50px;border:0;width:250px;padding-left:10px;}
+.Page_CT .CTR .name{background:url(/images/login_p.png) -22px -14px no-repeat;}
+.Page_CT .CTR input{ font-size:18px;font-family:微软雅黑;}
+.Page_CT .CTR .psw{background:url(/images/login_p.png) -75px -14px no-repeat;width:100px}
+.Page_CT .CTR .login{text-align:center;}
+.Page_CT .CTR .login a:hover{ background:url(/images/login_p.png)-23px -128px no-repeat;color:#388BAB;}
+.Page_CT .CTR .login a{width:315px;height:51px;line-height:51px;text-align:center;display:inline-block;
+ background:url(/images/login_p.png) -24px -64px no-repeat;font-family:微软雅黑;font-size:20px;color:#803f00;}
+.Page_CT .CTR .hkd{ background:url(/images/login_p.png) -133px -11px no-repeat;width:94px;height:40px;line-height:40px;float:right;padding-right:20px; color:#666;}
+.Page_CT .CTR .hkd:hover{ background:url(/images/login_p.png) -389px -75px no-repeat; color:#005959;}
+.PageFooter{text-align:center;}
+.PageFooter ul li{display:inline;line-height:30px;color:#7d7d7d; margin:0px 5px;}
+.PageFooter ul li a{color:#7d7d7d;}
+.PageFooter ul li a:hover{ color:#000;}
+.wjm{ color:#666666; margin-right:25px; font-size:14px;}
+div#divbg{position:fixed;left:0; bottom:0; right:0; top:0;z-index:-1;background:#203854;} 
+div#divbg > img{height:100%; width:100%; border:0px none;}
+div#divbg1{height:55px; width:100%;border:0; padding-top:9px;}
+div#divbg1 b{margin-left:461px;width:261px; height:68px;display:block; }
+#shu{ float:left; width:150px; height:50px; background-color:#ebeef5; border:0px; color:#FFF; font-size:30px; margin-left:30px; margin-top:15px;}
