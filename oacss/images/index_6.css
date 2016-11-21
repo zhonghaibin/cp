@@ -1,0 +1,58 @@
+/* ::::: http://cbou2.diusx.com:880/rs/v2_mi_zhcn/css/rdset.css ::::: */
+
+.dlg { background: rgb(11, 175, 207) none repeat scroll 0% 0% ! important; }
+/* ::::: http://cbou2.diusx.com:880/rs/v2_mi_zhcn/css/style.css ::::: */
+
+html, body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, fieldset, input { margin: 0px; padding: 0px; }
+ul, ol { list-style: outside none none; }
+li:hover { transition: all 0.2s ease-in-out 0s; }
+p {  }
+acronym::after { content: " (" attr(title) ")"; }
+body { background: rgb(255, 255, 255) url('background.jpg') repeat fixed center top / cover ; font-family: "simsun","微軟正黑體"; color: rgb(85, 85, 85); font-size: 16px; overflow-x: hidden; }
+.clear { clear: both; }
+.clearfix::after { content: "."; height: 0px; clear: both; visibility: hidden; }
+.radius, .button, .sider .mobile a, .paging li, .sider .client a, .page, .window, .keno_R .method .ex, .btnChoose li, .page ul.tabs li a, .gamemenu_list a, .btnList li, .btnType li, #chat, [data-hint]::after, .keno_R .enterList, .tabs_inner li a { border-radius: 6px; }
+#dialog { width: 1000px; margin: 0px auto; clear: both; }
+#dialog .page { border: medium none; height: 100%; }
+.w4 { color: rgb(11, 175, 207); font-size: 18px; display: block; margin: 20px 10px 5px 0px; }
+.page, .window { margin: 0px auto; position: relative; }
+.pagetitle { font-size: 24px; line-height: 50px; padding-left: 20px; color: rgb(51, 51, 51); }
+.page .tips::after { content: ""; display: block; clear: both; }
+.page { background: rgba(11, 175, 207, 0.8) none repeat scroll 0% 0%; }
+.newspage { background: rgb(236, 236, 238) none repeat scroll 0% 0%; }
+.newspage .pagetitle { color: rgb(23, 169, 208); }
+.newslist { margin: 0px 30px; }
+.newslist li { clear: both; padding: 10px 0px; border-top: 1px dashed rgb(202, 202, 202); overflow: auto; }
+.newslist .date { float: left; display: block; margin-right: 20px; font-size: 14px; line-height: 25px; color: rgb(109, 109, 107); font-weight: bold; }
+.newslist .w4 { margin: 0px; font-weight: bold; }
+.newslist p { width: 840px; display: block; float: left; }
+.numberlist li::before { content: counter(li, decimal); counter-increment: li; position: absolute; left: 0px; top: 20px; margin-top: -1.3em; background: rgb(11, 175, 207) none repeat scroll 0% 0%; color: rgb(255, 255, 255); width: 25px; height: 25px; line-height: 25px; text-align: center; border-radius: 2em; }
+.newspage .pagetitle { color: rgb(13, 173, 207); }
+@media screen� {
+  .loader { width: 150px; }
+  .loader span { display: block; }
+  .loader2 { width: 150px; }
+  .loader2 span { display: block; }
+}
+@media not all, not all {
+  .loader { width: 38px; }
+  .loader span { display: none; }
+  .loader2 { width: 38px; }
+  .loader2 span { display: none; }
+}
+.line-spin-fade-loader > div:nth-child(1) { top: 20px; left: 0px; animation: 1.2s ease-in-out 0.12s normal none infinite running line-spin-fade-loader; }
+.line-spin-fade-loader > div:nth-child(2) { top: 13.6364px; left: 13.6364px; transform: rotate(-45deg); animation: 1.2s ease-in-out 0.24s normal none infinite running line-spin-fade-loader; }
+.line-spin-fade-loader > div:nth-child(3) { top: 0px; left: 20px; transform: rotate(90deg); animation: 1.2s ease-in-out 0.36s normal none infinite running line-spin-fade-loader; }
+.line-spin-fade-loader > div:nth-child(4) { top: -13.6364px; left: 13.6364px; transform: rotate(45deg); animation: 1.2s ease-in-out 0.48s normal none infinite running line-spin-fade-loader; }
+.line-spin-fade-loader > div:nth-child(5) { top: -20px; left: 0px; animation: 1.2s ease-in-out 0.6s normal none infinite running line-spin-fade-loader; }
+.line-spin-fade-loader > div:nth-child(6) { top: -13.6364px; left: -13.6364px; transform: rotate(-45deg); animation: 1.2s ease-in-out 0.72s normal none infinite running line-spin-fade-loader; }
+.line-spin-fade-loader > div:nth-child(7) { top: 0px; left: -20px; transform: rotate(90deg); animation: 1.2s ease-in-out 0.84s normal none infinite running line-spin-fade-loader; }
+.line-spin-fade-loader > div:nth-child(8) { top: 13.6364px; left: -13.6364px; transform: rotate(45deg); animation: 1.2s ease-in-out 0.96s normal none infinite running line-spin-fade-loader; }
+@media screen and (max-width: 1024px) {
+  #nav ul li { padding: 0px 5px 0px 35px; }
+}
+/* ::::: http://cbou2.diusx.com:880/rs/css/jquery-ui.min.css ::::: */
+
+.ui-helper-clearfix::before, .ui-helper-clearfix::after { content: ""; display: table; border-collapse: collapse; }
+.ui-helper-clearfix::after { clear: both; }
+input.ui-button::-moz-focus-inner, button.ui-button::-moz-focus-inner { border: 0px none; padding: 0px; }

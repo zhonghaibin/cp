@@ -226,7 +226,7 @@ th.fc {
 .bankchoice span{float:left; border:#c1c1c1; width:140px; height:38px; margin-left:6px; cursor:pointer; display:block; }
 .bankimg{float:left; border:#c1c1c1 solid 1px; height:38px; width:140px;}
 
-#voice{width:16px; height:16px; display:block; float:right; margin-top:8px; margin-right:10px; cursor:pointer; border:none medium;}
+#voice{width:23px; height:23px; display:block; float:right; margin-top:8px; margin-right:10px; cursor:pointer; border:none medium;}
 .voice-on{background:url('/skin/main/images/voice-on.gif') no-repeat; }
 .voice-off{background:url('/skin/main/images/voice-off.gif') no-repeat;}
 
