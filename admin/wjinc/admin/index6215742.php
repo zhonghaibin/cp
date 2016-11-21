@@ -157,13 +157,13 @@ function boxSend(err, data){
 			<li><a href="system/settings" class="bq t_b_4">系统设置</a></li>
 			<li><a href="system/notice" class="bq t_b_3">公告中心</a></li>
 			<li><a href="system/bank" class="bq t_b_5">收款设置</a></li>
-			<!--li><a href="system/sysbanklist" class="bq t_b_5">银行管理</a></li-->
+			<!--<li><a href="system/sysbanklist" class="bq t_b_5">银行管理</a></li>-->
 			<li><a href="system/type" class="bq t_b_8">彩种管理</a></li>
 			<li><a href="system/played" class="bq t_b_9">玩法管理</a></li>
-			<li><a href="lhc/rte/308" class="bq t_b_9">六合彩管理</a></li>
+			<!--<li><a href="lhc/rte/308" class="bq t_b_9">六合彩管理</a></li>-->
 			<li><a href="member/level" class="yh_b_6 bq">等级设置</a></li>
 			<li><a href="database/backup" class="g_b_4 bq">数据备份</a></li>
-			<!--li><a href="pays/index" class="bq jf_b_2">接口管理</a></li-->
+                        <!--<li><a href="pays/index" class="bq jf_b_2">接口管理</a></li>-->
 		</ul>
 		<h3><span>站内信管理</span><a>＋</a></h3>
 		<?php
@@ -180,27 +180,27 @@ function boxSend(err, data){
 		<ul class="toggle"  style="display:none;">
         	<li><a href="About/daili" class="bq jf_b_2">代理申请记录</a></li>
 		</ul>
-		<h3><span>积分兑换管理</span><a>＋</a></h3>
+<!--		<h3><span>积分兑换管理</span><a>＋</a></h3>
 		<ul class="toggle"  style="display:none;">
         	<li><a href="Score/goodsList" class="bq jf_b_2">兑换管理</a></li>
 			<li><a href="Score/pointList" class="bq jf_b_1">兑换记录</a></li>
-		</ul>
-		<h3><span>电子银行管理</span><a>＋</a></h3>
+		</ul>-->
+<!--		<h3><span>电子银行管理</span><a>＋</a></h3>
 		<ul class="toggle"  style="display:none;">
         	<li><a href="dzyh/dzyhsettings" class="bq jf_b_2">电子银行配置</a></li>
 			<li><a href="dzyh/ckpointList" class="bq jf_b_1">存款管理</a></li>
 			<li><a href="dzyh/tkpointList" class="bq jf_b_1">取款管理</a></li>
-		</ul>
-		<h3><span>夺宝奇兵管理</span><a>＋</a></h3>
+		</ul>-->
+<!--		<h3><span>夺宝奇兵管理</span><a>＋</a></h3>
 		<ul class="toggle"  style="display:none;">
         	<li><a href="dbqb/dbqbsettings" class="bq jf_b_2">夺宝配置</a></li>
 			<li><a href="dbqb/pointList" class="bq jf_b_1">夺宝记录</a></li>
-		</ul>
-		<h3><span>幸运大转盘管理</span><a>＋</a></h3>
+		</ul>-->
+<!--		<h3><span>幸运大转盘管理</span><a>＋</a></h3>
 		<ul class="toggle"  style="display:none;">
         	<li><a href="Dzp/dzpsettings" class="bq jf_b_2">大转盘配置</a></li>
 			<li><a href="Dzp/pointList" class="bq jf_b_1">中奖记录</a></li>
-		</ul>
+		</ul>-->
 		
 		<ul class="toggle"></ul>
 

@@ -155,6 +155,7 @@
     <header><h3 class="tabs_involved">彩种投注金额统计<span class="spn1">（彩种名称：投注金额）</span></h3></header>
     <div class="module_content">
 	<?php
+          
 		$sql="select type, sum(beiShu*mode*actionNum) amount from {$this->prename}bets where lotteryNo!='' group by type";
 		$data=$this->getObject($sql, 'type');
 		$this->getTypes();

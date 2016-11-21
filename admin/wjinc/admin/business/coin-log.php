@@ -134,6 +134,7 @@
 			<select style="width:90px;" name="type">
 				<option value="">全部彩种</option>
 			<?php if($this->types) foreach($this->types as $var){
+                             
 				if($var['enable'] && !$var['isDelete']){
 			?>
 				<option value="<?=$var['id']?>" title="<?=$var['title']?>"><?=$this->ifs($var['shortName'], $var['title'])?></option>

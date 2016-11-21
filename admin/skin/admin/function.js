@@ -116,7 +116,7 @@ function info(message, time){
 var _TIP_ID=0;
 function _info(type, message, time){
 	var messageId='message-tip-'+_TIP_ID++;
-	$('<h4 style="display:none;" class="alert" id="'+messageId+'"></h4>')
+	$('<h3 style="display:none;" class="alert" id="'+messageId+'"></h3>')
 	.addClass(type)
 	.text(message)
 	.prependTo('#message-tip')

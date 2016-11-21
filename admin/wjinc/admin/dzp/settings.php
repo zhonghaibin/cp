@@ -1,7 +1,7 @@
 <article class="module width_full">
 <input type="hidden" value="<?=$this->user['username']?>" />
 	<header><h3 class="tabs_involved">大转盘配置</h3></header>
-	<form name="system_install" action="/admin778899.php/Dzp/updateSettings" method="post" target="ajax" call="sysSettings" onajax="sysSettingsBefor">
+	<form name="system_install" action="/admin778899.php/Dzp/updateSettings" method="post" target="ajax" call="dbqbSettings" onajax="dbqbSettingsBefor">
 	<table class="tablesorter left" cellspacing="0" width="100%">
 		<thead>
 			<tr>

@@ -437,7 +437,7 @@ exports.cp=[
 	},//(((
 	
 //{{{
-	{
+	/*{
 		title:'五分彩',
 		source:'qtllc',
 		name:'qtllc',
@@ -469,11 +469,11 @@ exports.cp=[
 				throw('五分彩解析数据不正确');
 			}
 		}
-	},
+	},*/
 //}}}
 
 //{{{
-	{
+	/*{
 		title:'两分彩',
 		source:'lfc',
 		name:'lfc',
@@ -505,11 +505,11 @@ exports.cp=[
 				throw('五分彩解析数据不正确');
 			}
 		}
-	},
+	},*/
 //}}}
 
 //{{{
-	{
+/*	{
 		title:'分分彩',
 		source:'ffc',
 		name:'ffc',
@@ -540,7 +540,7 @@ exports.cp=[
 				throw('分分彩解析数据不正确');
 			}
 		}
-	}
+	}*/
 //}}}
 ];
 

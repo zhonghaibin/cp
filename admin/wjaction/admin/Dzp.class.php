@@ -45,12 +45,12 @@ class Dzp extends AdminBase{
 			if($var==$this->dzpsettings[$key]) continue;
 			$i++;
 			$sql.="('$key', '$var'),";
-		}
-		
+	}
+
 		if(!$i) throw new Exception('数据没有改变');
 		$sql=rtrim($sql,',');
 		$sql.=' on duplicate key update `value`=values(`value`)';
-		
+	
 		if($this->insert($sql)){
 			$this->addLog(23,$this->adminLogType[23]);
 			return $this->getdzpSettings(0);

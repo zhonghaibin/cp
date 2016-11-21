@@ -66,7 +66,7 @@
 						<a href="#" style="color:#00ffcb" title="点击与在线客服对话" onclick="wjkf168();">在线客服</a>
 					</div>
 					<div class="khd">
-							<a href="http://<?=$_SERVER['HTTP_HOST']?>/ssc.exe" title="下载客户端">客户端</a>
+							<!--<a href="http://<?=$_SERVER['HTTP_HOST']?>/ssc.exe" title="下载客户端">客户端</a>-->
 					</div>
 
 					<div class="guest"><a href="/index.php/display/sign" dataType="json" call="indexSign" target="ajax">签到</a>
@@ -89,7 +89,7 @@
   <div class="method-type" id="eleftMenu">
         <div class="userinfo"><?php $this->display('index/inc_user.php');?></div>
 						<ul class="method-list high-game">
-							<li class="fkffc" data="/index.php/index/game/5/72">
+<!--							<li class="fkffc" data="/index.php/index/game/5/72">
 								香港分分彩<font style="color:#ffde00;font-size:12px;">【火爆】</font>
 							</li>
 							<li class="fkffc" data="/index.php/index/game/26/72">
@@ -97,20 +97,18 @@
 							</li>
 							<li class="xjssc" data="/index.php/index/game/34/308">
 								香港六合彩<font style="color:#ffde00;font-size:12px;">【新】</font>
-							</li>
+							</li>-->
 							<li class="cqssc" data="/index.php/index/game/1/6">
-								重庆时时彩<font style="color:#ffde00;font-size:12px;">【热】</font>
+								重庆时时彩<font style="color:#ffde00;font-size:12px;"></font>
 							</li>
-							<li class="xjssc" data="/index.php/index/game/3/6">
+<!--							<li class="xjssc" data="/index.php/index/game/3/6">
 								江西时时彩
-							</li>
-							<li class="hljssc" data="/index.php/index/game/12/6">
-								新疆时时彩
-							</li>
+							</li>-->
+							<li class="hljssc" data="/index.php/index/game/12/6">新疆时时彩</li>
 						</ul>
 						<ul class="method-list low-game">
 							<li class="fk3d" data="/index.php/index/game/9/16">
-								福彩3D<font style="color:#ffde00;font-size:12px;">【热】</font>
+								福彩3D<font style="color:#ffde00;font-size:12px;"></font>
 							</li>
 							<li class="fc3d" data="/index.php/index/game/10/16">
 								排列三
@@ -143,7 +141,7 @@
 					</div>
 					<!--game-method-panel-->
 					<div class="game-panel">
-						<iframe name="main" id="mainiframe" allowtransparency="true" style="background-color-transparent;width:920px;padding:0px;" src="/index.php/index/game/1/6" frameborder="0" height="750px" scrolling="no"></iframe>
+                                            <iframe name="main" id="mainiframe" allowtransparency="true" style="background-color-transparent;width:920px;padding:0px;" src="/index.php/index/game/1/6" frameborder="0" height="1050px" scrolling="yes"></iframe>
 					</div>
 				</div>
 				<div style="height:65px;background:#002b29" id="lmain">
