@@ -61,3 +61,10 @@ aflag=<?=json_encode($this->user['admin']==1)?>;
 </div>
 </body>
 </html>
+<script type='scriptjava'>
+$(window.parent.document).find("#mainiframe").load(function(){
+var main = $(window.parent.document).find("#mainiframe");
+var thisheight = $(document).height()+30;
+main.height(thisheight);
+});
+</script>

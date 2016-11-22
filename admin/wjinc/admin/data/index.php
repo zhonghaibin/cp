@@ -129,7 +129,12 @@
 							
 						}else if($this->type==20){
 							// PK10
-							$number = 179*(strtotime(date('Y-m-d', $date))-strtotime('2007-11-11'))/3600/24+$var['actionNo']-1267;
+							//$number=587914;
+							$number = 179*(strtotime(date('Y-m-d', $date))-strtotime('2007-11-11'))/3600/24+$var['actionNo']-1267-1253;
+							//echo '<pre>';
+							//print_r($number);
+							///print_r($var['actionNo']);
+							//echo '</pre>';
 							$sql="select * from {$this->prename}data where type={$this->type} and number='$number'";
 							$data=$this->getRow($sql);
 							
