@@ -69,9 +69,8 @@
 			<div class="touzhu-bottom">
 				<div class="tz-tongji">总投注数：<span id="all-count">0</span>注&nbsp;&nbsp;&nbsp;&nbsp;购买金额：<span id="all-amount">0.00</span>元</div>
 				<div class="tz-buytype">
-                                    <div class="tz-true-btn"><div class="tz-true-hover" id="btnPostBet">确定投注</div></div>
 					<label class="zh-true-btn"><input type="checkbox" name="zhuiHao" value="1" /></label>
-					
+					<div class="tz-true-btn"><div class="tz-true-hover" id="btnPostBet">确定投注</div></div>
 				</div>
 
 			</div>

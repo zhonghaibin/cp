@@ -98,7 +98,9 @@ function deleteBet(err, code){
         	<option value="0" <?=$this->iff($_REQUEST['type']=='', 'selected="selected"')?>>全部彩种</option>
             <?php
                 if($this->types) foreach($this->types as $var){ 
+            
                     if($var['enable']){
+                
             ?>
             <option value="<?=$var['id']?>" <?=$this->iff($_REQUEST['type']==$var['id'], 'selected="selected"')?>><?=$this->iff($var['shortName'], $var['shortName'], $var['title'])?></option>
 
@@ -144,7 +146,7 @@ function deleteBet(err, code){
 </div>
 <div id="wanjinDialog"></div>
 </body>
-</html>
+</html> 
   
    
  
