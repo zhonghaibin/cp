@@ -1,0 +1,42 @@
+/* 首頁登入 */
+#index{width:700px;background:url(../images/loginbg.png) no-repeat 10px 8px,url(../images/loginbg.png) no-repeat 98% 8px ; background-color: #e2e2e2;  border:1px #fff solid;position:relative;padding:35px; behavior: url(../other/PIE.htc);
+          -moz-box-shadow:-1px 10px 20px 3px rgba(0,0,0,0.4); -webkit-box-shadow:-1px 10px 20px 3px rgba(0,0,0,0.4); box-shadow:-1px 10px 20px 3px rgba(0,0,0,0.4);margin:150px auto;}
+#index .loginlogo {position:absolute;    top: -85px;left:35%;}
+.indexwrap{background:url(../images/wrap_bg.jpg) no-repeat;background-size:cover; overflow:auto;margin:6% auto 2% auto;}
+.indexL{width:55%;border-right:#ededed 1px solid;padding-right:40px;float:left}
+.indexL a{color:#666;}
+.indexL a:hover{color:#fd8420;}
+.login{margin:20px 0;}
+.login li{background-color:#fff;background-position:10px 50%;margin:10px 5px; padding:5px;padding-left:50px;-moz-border-radius: 6px;-webkit-border-radius: 6px;border-radius: 6px;}
+.login_id{background:url(../images/login_id.png) no-repeat;}
+.login_pass{background:url(../images/login_pass.png) no-repeat;}
+.login_pw{background:url(../images/login_pw.png) no-repeat;width:160px;position:relative; }
+#index .topic,.getpw .topic{display:block;border-bottom:#d2d2d2 2px solid; color:#939393;font-size: 14px;}
+#index .topicline,.getpw .topicline{color:#506fa5;font-size: 26px;font-weight: bold;border-bottom:#506fa5 2px solid; margin-right:5px;display:inline-block;margin-bottom:-2px;}
+#index input,.getpw .input04{ height:35px;width:96%;background:#fff;color:#506fa5;font-size:16px; line-height:38px ; border:none;padding:0 3px;font-family:"微軟正黑體";    outline: none;}
+#index .input_s{ width:150px; }
+#index .go a {color:#fff;font-size:21px;}
+#index .go,.getpw .go{ line-height:48px;height:48px;color:#fff;font-size:21px;text-align:center; background:url(../images/btnbg.jpg) ;border:#c9c9c9 solid 1px;margin-left:5px;cursor: pointer; -moz-border-radius: 6px;-webkit-border-radius: 6px;border-radius: 6px;}
+#index .go:hover,.getpw .go:hover{ background-position:0 -48px;}
+.footer{width:100%;min-height:57px;line-height:20px;padding-top:15px;text-align:center;font-size:13px;color:#b8b8b8;clear:both; overflow:auto;}
+.button-wrapper{width:36%;float:left;border-left:#c2c2c2 1px solid;padding-left:20px; }
+.b5{display:block;text-align:center}
+.b5 img{max-width:70%}
+.a-btn {
+    height: 50px;
+    width: 155px;
+    display: inline-block;
+    float: left;
+    margin: 1px;
+    margin-top: 20px;
+    overflow: hidden;
+    opacity: 3.7;
+    border-radius: 5px;
+    line-height: 50px;
+    font-size: 20px;
+    text-indent: 2em;
+}
+
+.b3{ background:url(../images/serve.png) no-repeat 8px 2px #ff9e0f;   }
+
+.a-btn:hover{opacity:1;}
