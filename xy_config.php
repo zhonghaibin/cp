@@ -2,7 +2,7 @@
 require_once('xy_sqlin.php');
 $conf['debug']['level']=5;
 
-/*		Êý¾Ý¿âÅäÖÃ		*/
+/*		ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½ï¿½ï¿½		*/
 $conf['db']['dsn']='mysql:host=localhost;dbname=xy_yule;charset=utf8';
 $dbname='xy_yule';
 $dbhost='localhost';
@@ -19,8 +19,8 @@ $conf['url_modal']=2;
 $conf['action']['template']='xy_inc/xy_default/';
 $conf['action']['modals']='xy_action/xy_default/';
 
-$conf['member']['sessionTime']=15*60;	// ÓÃ»§ÓÐÐ§Ê±³¤
-
+$conf['member']['sessionTime']=15*60;	// ï¿½Ã»ï¿½ï¿½ï¿½Ð§Ê±ï¿½ï¿½
+$weburl='http://www.cp.com';
 error_reporting(E_ERROR & ~E_NOTICE);
 
 ini_set('date.timezone', 'asia/shanghai');

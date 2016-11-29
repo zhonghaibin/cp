@@ -23,7 +23,7 @@ class Commission extends AdminBase{
 
 		$yesterday = date("Y-m-d",strtotime("-1 day"));
 		$fromTime = strtotime($yesterday.' 00:00:00');
-		$toTime = strtotime($yesterday.' 24:00:00');
+		$toTime = strtotime($yesterday.' 23：59：59');
 		//$toTime = time();
 		// 加载系统设置
 		// and betAmount > ".floatval($this->settings['conCommissionBase1'])."
@@ -37,7 +37,7 @@ class Commission extends AdminBase{
 		$this->beginTransaction();
 		try{
 			
-			if(floatval($this->settings['conCommissionBase']) > $betAmount && floatval($this->settings['conCommissionBase1']) <= $betAmount){
+			if(floatval($this->settings['conCommissionBase']) > $betAmount){
 			//执行消费佣金第一规则
 			//$sql="select parentId from {$this->prename}members where `uid`=?";
 			$log=array(
@@ -112,7 +112,7 @@ class Commission extends AdminBase{
 
 			$yesterday = date("Y-m-d",strtotime("-1 day"));
 			$fromTime = strtotime($yesterday.' 00:00:00');
-			$toTime = strtotime($yesterday.' 24:00:00');
+			$toTime = strtotime($yesterday.' 23：59：59');
 		//$toTime = time();
 		// 加载系统设置
 		// and betAmount > ".floatval($this->settings['conCommissionBase1'])."

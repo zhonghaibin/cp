@@ -1,4 +1,3 @@
-﻿//万金娱乐 QQ:421991377
 $(function(){
 
 $('.dGameStatus input[type=text]').live('change',function(){

@@ -37,8 +37,8 @@ class System extends AdminBase{
 		if(!ctype_digit($para['jiaomosi'])) throw new Exception('请正确投注模式!');
 		if(!ctype_digit($para['fenmosi'])) throw new Exception('请正确投注模式!');
 		if(!ctype_digit($para['limosi'])) throw new Exception('请正确投注模式!');
-		if(!is_numeric($para['LiRunLv'])) throw new Exception('请正确设置系统彩利率!');
-		if($para['LiRunLv']!=2 && $para['LiRunLv']!=-900) throw new Exception('请正确设置系统彩利率!');
+		//if(!is_numeric($para['LiRunLv'])) throw new Exception('请正确设置系统彩利率!');
+		//if($para['LiRunLv']!=2 && $para['LiRunLv']!=-900) throw new Exception('请正确设置系统彩利率!');
 		
 		foreach($para as $key=>$var){
 			if($var==$this->settings[$key]) continue;

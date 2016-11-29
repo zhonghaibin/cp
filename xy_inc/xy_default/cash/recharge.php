@@ -167,7 +167,7 @@ function showPaymentFee(){
  <div class="body">
         <?php
 				$sql="select * from {$this->prename}bank_list b, {$this->prename}sysadmin_bank m where m.admin=1 and m.enable=1 and b.isDelete=0 and b.id=m.bankId";
-				$banks=$this->getRows($sql);	
+				$banks=$this->getRows($sql);
 				if($banks){
 				if($this->user['coinPassword']){
 				?>

@@ -86,13 +86,13 @@
 			     $("input[name=fenmosi]").click(function(){if($(this).attr("checked")==true){$(this).val(1);}else{if(<? echo $this->settings['fenmosi'];?>==0){$(this).val(1);}else{$(this).val(0);}}})
 			     $("input[name=limosi]").click(function(){if($(this).attr("checked")==true){$(this).val(1);}else{if(<? echo $this->settings['limosi'];?>==0){$(this).val(1);}else{$(this).val(0);}}})
 		    </script>
-			<tr>
+<!--			<tr>
 				<td>系统彩种利润</td>
 				<td>
 					<label><input type="radio" value="2" name="LiRunLv" <?=$this->iff($this->settings['LiRunLv'],'checked="checked"')?>/>2%盈利</label>
 					<label><input type="radio" value="-900" name="LiRunLv" <?=$this->iff($this->settings['LiRunLv']==-900,'checked="checked"')?>/>随机</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp设置好后须重启开将器才能生效
 				</td>
-			</tr>
+			</tr>-->
 			<tr>
 				<td>返点最大值</td>
 				<td><input type="text" class="textWid1" value="<?=$this->settings['fanDianMax']?>" name="fanDianMax"/>%</td>
@@ -242,7 +242,7 @@
 					<textarea name="kefuGG" cols="56" rows="5"><?=$this->settings['kefuGG']?></textarea>
 				</td>
 			</tr>
-			<tr>
+<!--			<tr>
 				<td>QQ客服状态</td>
 				<td>
 					<label><input type="radio" value="1" name="qqkefuStatus" <?=$this->iff($this->settings['qqkefuStatus'],'checked="checked"')?>/>开启</label>
@@ -256,7 +256,7 @@
 				<td>
 					<textarea name="qqkefuGG" cols="56" rows="5"><?=$this->settings['qqkefuGG']?></textarea>
 				</td>
-			</tr>
+			</tr>-->
 		</tbody>
 	</table>
 	<footer>

@@ -40,7 +40,10 @@
 	}
 
 	$sql="select c.*, u.username, u.parents from {$this->prename}member_recharge c, {$this->prename}members u where c.isDelete=0 $rechargeIdWhere $timeWhere $userWhere $typeWhere and c.uid=u.uid order by c.id desc";
-	$data=$this->getPage($sql, $this->page, $this->pageSize);
+//	echo '<pre>';
+//        print_r($sql);
+//        echo '</pre>';
+        $data=$this->getPage($sql, $this->page, $this->pageSize);
 	
 	$sql="select b.home, b.name, u.id, u.account, u.username from {$this->prename}sysadmin_bank u, {$this->prename}bank_list b where b.isDelete=0 and u.admin=1 and u.bankId=b.id";
 	$bank=$this->getObject($sql, 'id');

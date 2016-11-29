@@ -97,7 +97,7 @@ class AdminBase extends Object{
 	
 	public function getPlayeds(){
 		if($this->playeds) return $this->playeds;
-		$sql="select * from {$this->prename}played";
+		$sql="select * from {$this->prename}played where type in(1,2,3,6)";
 		return $this->playeds=$this->getObject($sql, 'id', null, $this->expire);
 	}
 	

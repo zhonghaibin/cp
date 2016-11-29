@@ -1,0 +1,37 @@
+欢迎使用支付宝标准双接口集成服务，此目录提供的是PHP接口代码示例，你可以直接把该代码放到PHP服务器下，直接访问index.php.
+ 1、文件列表：
+   
+    alipay_config.php    （基本参数配置页面，填写商家的支付宝安全校验码，合作id,支付宝帐号等内容）
+    index.php            （提供给商家的接入页面，包含了物流信息，商品信息等内容）
+    return_url.php       （跳转页面，买家支付成功后跳转的页面，仅当买家支付成功后跳转一次。）
+    notify_url.php       （异步通知，下单成功后，支付宝服务器通知商户服务，并把这笔订单的状态通知给商户，商户根据返回的这笔订单的状态，修改网站订单的状态，比如等待买家付款状态，买家已经付款等待卖家发货.....）
+
+
+    alipay_service.php    支付核心类文件（建议不要修改）
+    alipay_notify.php     返回核心类文件（建议不要修改）
+ 
+ 2、文件内容说明： 
+   alipay_config.php 文件 
+     	-- show_url     = ""                     '商户网站的网址。
+	-- seller_email	= ""	                 '请填写签约支付宝账号，
+	-- partner	= ""	         '填写签约支付宝账号对应的partnerID，
+	-- key		= ""	 '填写签约账号对应的安全校验码
+     如何获取支付宝帐号，安全校验码和partner 
+      '登陆 www.alipay.com 后, 点商家服务,可以看到支付宝安全校验码和合作id,导航栏的下面 
+    notify_url                   交易过程中服务器通知的页面 要用 http://格式的完整路径，例如     http://www.alipay.com/alipay/notify_url.php  注意文件位置请填写正确
+    return_url                   付完款后跳转的页面 要用 http://格式的完整路径, 例如           http://www.alipay.com/alipay/return_url.php  注意文件位置请填写正确。
+
+       index.php 文件
+        按照alipay_config.php文件进行配置，然后修改商品名称，商品描述，外部商家订单号等
+       logistics_fee             物流配送费用
+       logistics_payment         物流配送费用付款方式：SELLER_PAY(卖家支付)、BUYER_PAY(买家支付)、                                 BUYER_PAY_AFTER_RECEIVE(货到付款)
+       logistics_type            物流配送方式：POST(平邮)、EMS(EMS)、EXPRESS(其他快递)
+
+ 3、return_url 与 notify_url 的区别
+    买家付款成功后,如果接口中指定有return_url ,买家付完款后会跳到 return_url所在的页面,这个页面可以展示给客户看,这个页面只有付款成功才会跳转.
+
+  notify_url: 服务器后台通知,这个页面是程序后台运行的(买家和卖家都看不到),买家付完款后,支付宝会调用notify_url这个页面所在的页面并把相应的参数传递到这个页面,这个页面根据支付宝传递过来的参数修改网站订单的状态,更新完订单后需要在页面上打印出一个success 给支付宝,如果反馈给支付宝的不是success,支付宝会继续调用这个页面. 
+ 
+   流程:  买家付完款(trade_status=WAIT_SELLER_SEND_GOODS)--->支付宝通知notify_url--->如果反馈给支付宝的是success(表示成功,这个状态下不再反馈,如果不是继续通知,一般第一次发送和第二次发送的时间间隔是3分钟)
+ 剩下的过程,卖家发货,买家确认收货,交易成功都是这个流程
+ 

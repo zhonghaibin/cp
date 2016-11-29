@@ -440,7 +440,7 @@ class Team extends WebLoginBase{
 		if(!$this->user['type'])  throw new Exception('非法操作!');
 		$uid = $this->user['uid'];
 		if(!$uid) die('参数出错');
-		$sql = 'select * from {$this->prename}bonus_log where uid='.$this->user['uid'].' and bonusStatus = 0 order by id DESC Limit 1';
+		$sql = "select * from {$this->prename}bonus_log where uid=".$this->user['uid']." and bonusStatus = 0 order by id DESC Limit 1";
 		$lastBonus = $this->getRow($sql);
 		if($lastBonus){
 			//直接将用户分红提现，提现信息提交至后台

@@ -18,7 +18,7 @@ if($para['type']==1){
 	$actionNo=date('Yz', $this->time);
 	$actionNo=substr($actionNo,0,4).substr(substr($actionNo,4)+1000,1);
 }else if($para['type']==20){
-	$actionNo = 179*(strtotime(date('Y-m-d', strtotime($para['actionTime'])))-strtotime('2007-11-11'))/3600/24+$para['actionNo']-1267;
+	$actionNo = 179*(strtotime(date('Y-m-d', strtotime($para['actionTime'])))-strtotime('2007-11-11'))/3600/24+$para['actionNo']-1267-1253;
 }
 $id=$this->getValue("select id from xy_data where number=? and type={$para['type']}",$actionNo);
 ?>

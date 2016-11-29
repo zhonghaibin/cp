@@ -1,7 +1,7 @@
 <table width="900" border="0" cellspacing="0" cellpadding="0">
 	<tbody class="table_b_tr">
 		<?php 
-			$sql = 'select * from {$this->prename}bonus_log where uid='.$this->user['uid'].' and bonusStatus = 0 order by id DESC Limit 1';
+			$sql = "select * from {$this->prename}bonus_log where uid=".$this->user['uid']."and bonusStatus = 0 order by id DESC Limit 1";
 			$lastBonus = $this->getRow($sql);
 			if($lastBonus){
 		?>

@@ -16,6 +16,34 @@
         <script type="text/javascript" src="/skin/main/function.js"></script>
         <script type="text/javascript" src="/skin/main/onload.js"></script>
         <script type="text/javascript" src="/skin/js/jquery-1.8.0.min.js"></script>
+        <script type="text/javascript">
+    　function setIframeHeight(id){
+	try{
+		var iframe = document.getElementById(id);
+		if(iframe.attachEvent){
+			iframe.attachEvent("onload", function(){
+				iframe.height =  iframe.contentWindow.document.documentElement.scrollHeight;
+                                if(iframe.height<=790){
+                                    iframe.height=750;
+                                }
+                               // alert(iframe.height);
+			});
+			return;
+		}else{
+			iframe.onload = function(){
+				iframe.height = iframe.contentDocument.body.scrollHeight;
+                                if(iframe.height<=790){
+                                    iframe.height=750;
+                                }
+                              //  alert(iframe.height);
+			};
+			return;				 
+		}	 
+	}catch(e){
+		throw new Error('setIframeHeight Error');
+	}
+}
+</script>
         <?php $this->display('inc_header.php'); ?>
         <style>
             /*header 顶部*/
@@ -157,6 +185,14 @@
             }
         </style>
     </head>
+    ﻿<?php $this->freshSession();$this->updateSessionTime();
+		$ngrade=$this->getValue("select max(level) from {$this->prename}member_level where minScore <= {$this->user['scoreTotal']}");
+		if($ngrade>$this->user['grade']){
+			$sql="update xy_members set grade={$ngrade} where uid=?";
+			$this->update($sql, $this->user['uid']);
+		}else{$ngrade=$this->user['grade'];}
+		$date=strtotime('00:00:00');
+?>
     <body style="width: 100%; padding: 0px; margin: 0px;">
         <div id="divbg"><img src="/images/bg/body.jpg"></div> 
         <div class="header">
@@ -235,23 +271,23 @@
                                                                     香港六合彩<font style="color:#ffde00;font-size:12px;">【新】</font>
                                                                 </li>-->
                                 <li class="cqssc" data="/index.php/index/game/1/1">
-                                    重庆时时彩<font style="color:#ffde00;font-size:12px;">【热】</font>
+                                    重庆时时彩<font style="color:#ffde00;font-size:12px;"></font>
                                 </li>
 <!--                                <li class="xjssc" data="/index.php/index/game/3/1">
                                     江西时时彩
                                 </li>-->
-<!--                                <li class="hljssc" data="/index.php/index/game/12/1">
+                                <li class="hljssc" data="/index.php/index/game/12/1">
                                     新疆时时彩
-                                </li>-->
+                                </li>
                             </ul>
                             <ul class="method-list low-game">
-<!--                                <li class="fk3d" data="/index.php/index/game/9/16">
-                                    福彩3D<font style="color:#ffde00;font-size:12px;">【热】</font>
+                                <li class="fk3d" data="/index.php/index/game/9/16">
+                                    福彩3D<font style="color:#ffde00;font-size:12px;"></font>
                                 </li>
                                 <li class="fc3d" data="/index.php/index/game/10/16">
                                     排列三
-                                </li>-->
-                                <li class="fc3d" data="/index.php/index/game/20/26">
+                                </li>
+                                <li class="fc3d" data="/index.php/index/game/20/29">
                                     北京PK10
                                 </li>
                             </ul>
@@ -281,7 +317,7 @@
                         </div>
                         <!--game-method-panel-->
                         <div class="game-panel">
-                            <iframe name="main" id="mainiframe" allowtransparency="true" style="background-color-transparent;width:920px;padding:0px;" src="/index.php/index/game/1/1" frameborder="0" height="750px" scrolling="no"></iframe>
+                            <iframe name="main" id="mainiframe" allowtransparency="true" style="background-color-transparent;width:920px;padding:0px;" src="/index.php/index/game/1/1" frameborder="0" height="750px" scrolling="no"onload='setIframeHeight("mainiframe");'></iframe>
                         </div>
                     </div>
 

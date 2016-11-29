@@ -104,7 +104,7 @@ public final function fabuxiaoxi_action(){
 			$uid=$this->lastInsertId();
 			$this->addLog(4,$this->adminLogType[4].'['.$update['username'].']',$uid, $update['username']);
 			$this->updateRows($this->prename .'members', array('parents'=>$uid), 'uid='.$uid);
-			$para['message']='添加用户成功';
+			$update['message']='添加用户成功';
 			return $update;
 		}else{
 			throw new Exception('未知错误');

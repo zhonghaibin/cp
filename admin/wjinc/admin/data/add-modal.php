@@ -17,7 +17,7 @@ if($para['type']==1){
 }else if($para['type']==34){
 	$actionNo=substr(date('Y'),0,4).substr(1000+$para['actionNo'],1);
 }else if($para['type']==20){
-	$actionNo = 179*(strtotime(date('Y-m-d', strtotime($para['actionTime'])))-strtotime('2007-11-11'))/3600/24+$para['actionNo']-1267;
+	$actionNo = 179*(strtotime(date('Y-m-d', strtotime($para['actionTime'])))-strtotime('2007-11-11'))/3600/24+$para['actionNo']-1267-1253;
 }
 ?>
 <div>

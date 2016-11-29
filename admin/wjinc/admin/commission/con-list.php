@@ -2,14 +2,14 @@
 	//前一天日期
 	$yesterday = date("Y-m-d",strtotime("-1 day"));
 	$fromTime = strtotime($yesterday.' 00:00:00');
-	$toTime = strtotime($yesterday.' 24:00:00');
+	$toTime = strtotime($yesterday.' 23：59：59');
 	//$toTime = time();
 	// 加载系统设置
 	// and betAmount > ".floatval($this->settings['conCommissionBase1'])."
 	$this->getSystemSettings();
 	//echo floatval($this->settings['conCommissionBase1']);
 	//exit;
-	$sql="select u.username, u.coin, u.uid, u.type, u.parentId, sum(b.mode * b.beiShu * b.actionNum) betAmount from xy_members u left join xy_bets b on u.uid=b.uid and b.isDelete=0 and b.actionTime between $fromTime and $toTime where 1 and u.parentId <> 0 and u.conCommStatus = 0 group by u.uid HAVING betAmount > ".floatval($this->settings['conCommissionBase1']);
+	$sql="select u.username, u.coin, u.uid, u.type, u.parentId, sum(b.mode * b.beiShu * b.actionNum) betAmount from xy_members u left join xy_bets b on u.uid=b.uid and b.isDelete=0 and b.actionTime between $fromTime and $toTime where 1 and u.parentId <> 0 and u.conCommStatus = 0 group by u.uid HAVING betAmount >= ".floatval($this->settings['conCommissionBase']);
 	$data=$this->getPage($sql, $this->page, $this->pageSize);
 	//echo '<pre>';
 	//print_r($data);

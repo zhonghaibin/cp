@@ -8,7 +8,7 @@ class WebLoginBase extends WebBase{
 	public $played;		// 玩法ID
 	public $NO;			// 期号
 	public $gameFanDian;
-	function __construct($dsn, $user='', $password=''){
+                function __construct($dsn, $user='', $password=''){
 		session_start();
 		if(!$_SESSION[$this->memberSessionName]){
 			header('location: /index.php/user/login');

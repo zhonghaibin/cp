@@ -21,7 +21,8 @@
 .game_top_aleft span.pdl0{padding-left:0;}
 
 .game_top_aright{border-right:thin solid rgba(255, 255, 255, 0.37);}
-.game_top_aright .tit{margin-left:80px;text-align:center;width:400px;height:30px;line-height:30px;padding:0px 10px;color:#fff;font-family:"微软雅黑",Arial;}
+.game_top_aright .tit{height:30px;line-height:30px;padding:0px 10px;color:#fff;font-family:"微软雅黑",Arial;    display: block;
+    float: left;text-indent: 4em;}
 .game_top_aright .tit .gamename{font-size:15px;font-weight:bold;color:#fff;}
 .game_top_aright .tit #kjsay{margin-left:5px; font-size:13px; display:none;}
 .game_top_aright .tit .kjtips{color:#fff; font-weight:bold;}
@@ -417,7 +418,7 @@ input.beishu{height:20px; width:35px; text-align:center; border:1px solid #CCCCC
 .game-main .game-cont .touzhu-top .input-type{background-position:0 -125px; float:left; margin-left:25px; width:135px; height:26px;}
 .game-main .game-cont .touzhu-top .input-type input{cursor:pointer;}
 label{ cursor:pointer;}
-
+#wei-shu{color:#fff;}
 .game-main .game-cont .touzhu-top .input-type .sb-bj{width:16px; height:26px; display:block; float:left}
 .game-main .game-cont .touzhu-top .input-type .jp-bj{background-position:-55px -125px; width:16px; height:26px; display:block; float:left}
 .game-main .game-cont .touzhu-top .prompt{float:left; margin-left:25px; width:200px; height:26px; color:#1AEECB;overflow-x:visible;}

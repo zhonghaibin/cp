@@ -2,7 +2,7 @@
 	//前一天日期
 	$yesterday = date("Y-m-d",strtotime("-1 day"));
 	$fromTime = strtotime($yesterday.' 00:00:00');
-	$toTime = strtotime($yesterday.' 24:00:00');
+	$toTime = strtotime($yesterday.' 23：59：59');
 	//$toTime = time();
 	// 加载系统设置
 	// and betAmount > ".floatval($this->settings['conCommissionBase1'])."

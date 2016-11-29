@@ -81,7 +81,7 @@ function boxSend(err, data){
             	<li class="aafbfg"><a href="/index.php/safe/info">个人资料</a></li>
                 <li class="aafbfg"><a href="/index.php/safe/passwd">密码管理</a></li>
                 <li class="aafbfg"><a href="/index.php/report/coin">账变记录</a></li>
-				<li class="aafbfg"><a href="/index.php/wanfa/eg">玩法介绍</a></li>
+				<li class="aafbfg"><a href="/index.php/wanfa/wf">玩法介绍</a></li>
             </ul>
         </div>
     </div>

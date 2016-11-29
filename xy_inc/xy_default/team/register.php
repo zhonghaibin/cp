@@ -62,24 +62,24 @@ function qqkf(){
 <div class="page_top">
 <div class="w1280 CT">
 <ul class="fr">
-<li onclick="wjkf168();">
+<!--<li onclick="wjkf168();">
 <div class="c_onlineLive" title="在线客服"></div>
-</li>
-<li onclick="qqkf();">
+</li>-->
+<!--<li onclick="qqkf();">
 <div class="c_onlineQQ" title="QQ客服咨询"></div>
-</li>
+</li>-->
 </ul>
 <div class="fl login_t">
 <a href="#"></a>
 </div>
-<div class="cb">
+<!--<div class="cb">
 <img src="/images/nv.png" style="margin-top:10px;">
-</div>
+</div>-->
 </div>
 </div>
 <div class="page_center">
 <div class="w1280">
-<div class="fr mt20">
+    <div class="fr mt20" style="float:none">
 <div class="right">
 <h4>账户注册</h4>
 <?php if($args[0]){ ?>
@@ -118,10 +118,10 @@ function qqkf(){
     <?php }else{?>
     <div style="text-align:center; margin-top:100px;margin-bottom:250px; line-height:60px; color:#ff0033; font-size:20px; font-weight:bold;">链接已失效！</div>
     <?php }?>
-<div class="wz">
+<!--<div class="wz">
 <p style="text-align:center;">因高端服务而服务高端</p>
 <p style="margin-top:30px;text-align:center;">开创亚洲最透明彩票平台</p>
-</div>
+</div>-->
 </div>
 <div class="fl">
 </div>

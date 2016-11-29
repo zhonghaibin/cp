@@ -11,7 +11,7 @@ class Database extends AdminBase{
 	
   public final function dataBackup() {
 	    set_time_limit(0);
-        $DataDir = "./databak888/";
+        $DataDir ="./databak888/";
 		$para=$_POST;
 		$para['File']=wjStrFilter($para['File']);
 		$para['Action']=wjStrFilter($para['Action']);
@@ -20,9 +20,9 @@ class Database extends AdminBase{
             $config = array(
                 'host' => "localhost",
                 'port' => "3306",
-				'dbname' => "funyule",
-                'userName' => "lxq",
-                'userPassword' => "lxq()()",
+		'dbname' => "xy_yule",
+                'userName' => "root",
+                'userPassword' => "root",
                 'dbprefix' => "xy_",
                 'charset' => 'UTF8',
                 'path' => $DataDir,
@@ -38,13 +38,14 @@ class Database extends AdminBase{
                 $mr->recover($para['File']);                
 				return '数据库还原成功';
             } elseif ($para['Action'] == 'Del') {
-                if (@unlink($DataDir . $para['File'])) {
-					return '删除成功';
+                $path=$DataDir.'xy_'.$para['File'];
+                if (@unlink($path)) {
+                    return '删除成功';              
                 } else {                    
 					throw new Exception('删除失败');
                 }
             } elseif ($para['Action'] == 'Dow') {
-				throw new Exception('暂不开放下载功能!');
+			throw new Exception('暂不开放下载功能!');
                 function DownloadFile($fileName) {
                     ob_end_clean();
                     header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
@@ -52,10 +53,11 @@ class Database extends AdminBase{
                     header('Content-Type: application/octet-stream');
                     header('Content-Length: ' . filesize($fileName));
                     header('Content-Disposition: attachment; filename=' . basename($fileName));
-                    readfile($fileName);
+                    readfile($fileName); 
                 }
-                DownloadFile($DataDir . $para['file']);
-                exit();
+                 $path=$DataDir.'xy_'.$para['File'];
+                 DownloadFile($path);
+               exit();
             }
         }
         

@@ -10,12 +10,12 @@
 		$lastMonthTwentyOne = date('Y-m-21', strtotime('-1 month'));
 		$fromTime = strtotime($lastMonthTwentyOne.' 00:00:00');
 		$lastMonthEndDay = date('Y-m-t', strtotime('-1 month'));
-		$toTime = strtotime($lastMonthEndDay.' 24:00:00');
+		$toTime = strtotime($lastMonthEndDay.' 23:59:59');
 	}else{
 		$dayBeforeTen = date("Y-m-d",strtotime("-10 day"));
 		$fromTime = strtotime($dayBeforeTen.' 00:00:00');
 		$dayBeforeOne = date("Y-m-d",strtotime("-1 day"));
-		$toTime = strtotime($dayBeforeOne.' 24:00:00');
+		$toTime = strtotime($dayBeforeOne.' 23：59：59');
 	}
 	
 	$this->getSystemSettings();

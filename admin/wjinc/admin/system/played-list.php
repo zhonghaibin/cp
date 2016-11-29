@@ -3,9 +3,9 @@
 	$chiTypes=array(
 		1=>'时时彩',
 		2=>'11选5',
-		3=>'3D/P3/时时乐',
+		3=>'3D/P3',
 		6=>'PK10',
-		5=>'系统彩'
+		//5=>'系统彩'
 	);
 	$groups=$this->getRows("select * from {$this->prename}played_group where type=?  order by sort", $args[0]);
 	$sql="select * from {$this->prename}played where groupId=? order by sort";
